@@ -1,0 +1,156 @@
+{
+    "name": "Round",
+    "author": "EMERALD#0874, Leozito",
+    "version": "v2.8 Lz",
+    "description": "This theme adds round edges to any image that can reasonably have them. Custom options for certain interface elements, like Header, Keyboard and Menus.",
+    "target": "System-Wide",
+    "manifest_version": 9,
+    "tabs": {
+        "default": [ "bigpicture", "MainMenu", "QuickAccess" ]
+    },
+    "inject": {
+        "shared.css": [],
+        "patches/context-menu-fix.css": [],
+        "patches/css-loader-fix.css": [],
+        "patches/download-bar-fix.css": [],
+        "patches/header-fix.css": [],
+        "patches/qam-fix.css": []
+    },
+    "patches": {
+        "Intensity (px)": {
+            "default": "15",
+            "type": "slider",
+            "values": {
+                "3": { "--round-intensity": [ "3px" ] },
+                "5": { "--round-intensity": [ "5px" ] },
+                "10": { "--round-intensity": [ "10px" ] },
+                "15": { "--round-intensity": [ "15px" ] },
+                "20": { "--round-intensity": [ "20px" ] },
+                "25": { "--round-intensity": [ "25px" ] },
+                "30": { "--round-intensity": [ "30px" ] }
+            }
+        },
+        "Outlines": {
+            "default": "Round",
+            "type": "dropdown",
+            "values": {
+                "Round": { "round-outline.css": [] },
+                "Square": {},
+                "Hidden": { "hide-outline.css": [] }
+            }
+        },
+        "Header & Search": {
+            "type": "checkbox",
+            "default": "Yes",
+            "values": {
+                "No": {},
+                "Yes": { "general/header.css": [] }
+            }
+        },
+        "Keyboard": {
+            "type": "checkbox",
+            "default": "Yes",
+            "values": {
+                "No": {},
+                "Yes": { "general/keyboard.css": [] }
+            }
+        },
+        "Library Info": {
+            "type": "checkbox",
+            "default": "Yes",
+            "values": {
+                "No": {},
+                "Yes": { "general/library-info.css": [] }
+            }
+        },
+        "Main Menu": {
+            "type": "checkbox",
+            "default": "Yes",
+            "values": {
+                "No": {},
+                "Yes": { "main-menu/main-menu.css": [] }
+            }
+        },
+        "Main Menu Collapse": {
+            "type": "checkbox",
+            "default": "Yes",
+            "values": {
+                "No": {},
+                "Yes": { "main-menu/main-menu-collapse.css": [] }
+            }
+        },
+        "In-game Menu": {
+            "type": "checkbox",
+            "default": "Yes",
+            "values": {
+                "No": {},
+                "Yes": { "main-menu/ingame-panel.css": [] }
+            }
+        },
+        "Settings Page - Left": {
+            "type": "checkbox",
+            "default": "Yes",
+            "values": {
+                "No": {},
+                "Yes": { "settings-page/side-menu.css": [] }
+            }
+        },
+        "Settings Page - Right": {
+            "type": "checkbox",
+            "default": "Yes",
+            "values": {
+                "No": {},
+                "Yes": { "settings-page/page-content.css": [] }
+            }
+        },
+        "Settings Page Padding": {
+            "type": "checkbox",
+            "default": "Yes",
+            "values": {
+                "No": {},
+                "Yes": { "settings-page/center-padding.css": [] }
+            }
+        },
+        "QAM": {
+            "type": "dropdown",
+            "default": "QAM + Sidebar (Left)",
+            "values": {
+                "Default": {},
+                "QAM only": {
+                    "qam/qam-left-side.css":[]
+                },
+                "QAM + Sidebar": {
+                    "qam/qam-left-side.css":[],
+                    "qam/sidebar-all.css": []
+                },
+                "QAM + Sidebar (Left)": {
+                    "qam/qam-left-side.css": [],
+                    "qam/sidebar-left-side.css": []
+                },
+                "Sidebar only": {
+                    "qam/sidebar-all.css": []
+                },
+                "Sidebar (left) only": {
+                    "qam/sidebar-left-side.css": []
+                }
+            }
+        },
+        "Sidebar Collapse": {
+            "type": "checkbox",
+            "default": "Yes",
+            "values": {
+                "No": {},
+                "Yes": { "qam/sidebar-collapse.css": [] }
+            }
+        },
+        "QAM Sidebar Icons": {
+            "type": "checkbox",
+            "default": "Yes",
+            "values": {
+                "No": {},
+                "Yes": { "qam/sidebar-icons.css": [] }
+            }
+        }
+    },
+    "id": "7a2ed2b8-8c2e-40e7-aa98-4cacc0a6cf69"
+}

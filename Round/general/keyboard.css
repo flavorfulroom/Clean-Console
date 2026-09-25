@@ -1,0 +1,37 @@
+[class*="DefaultTheme"] [class*="_2KhPXikozxMpbIRo_6jPxW"],
+[class*="DefaultTheme"] [class*="virtualkeyboard_KeyboardExtendedRow_21EW_"] [class*="virtualkeyboard_KeyboardExtendedKey_394j7"] {
+    border-radius: var(--round-radius-size);
+    overflow: hidden;
+}
+
+
+[class*="DefaultTheme"] [class*="virtualkeyboard_Touched_3UFQq"] {
+    z-index: 999;
+}
+
+/* Fix Cropped Icon */
+._3VtXfHDGV1q2LCVruVnHed {
+    height: 20px;
+    transform: translateY(50%);
+    bottom: 50%;;
+}
+
+/* Center Action Buttons Text */
+
+._3LsB3VZBjMjAp0RCa_3MGS,
+.IunX6VHNYj-i8dv5WJzpM,
+.iMZ3TXDTLXYVzU8Q7A9yP,
+._3GfcsK1T47BLa5UQ3e4Xh3,
+.NGv5FNsp6c4OnD0_KOiDl,
+._2ye7YjL-n6ql_6UPyf5ptv {
+    justify-content: center;
+}
+
+._3LsB3VZBjMjAp0RCa_3MGS span,
+.IunX6VHNYj-i8dv5WJzpM span,
+.iMZ3TXDTLXYVzU8Q7A9yP span,
+._3GfcsK1T47BLa5UQ3e4Xh3 span,
+.NGv5FNsp6c4OnD0_KOiDl span,
+._2ye7YjL-n6ql_6UPyf5ptv span {
+    margin: 6px;
+}

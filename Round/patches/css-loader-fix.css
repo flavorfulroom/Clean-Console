@@ -1,0 +1,4 @@
+[class*="CSSLoader_ThemeCard_Container"] {
+    border-radius: var(--round-radius-size);
+    overflow: hidden;
+}
