@@ -1,11 +1,11 @@
 # Clean Console
 
 <p align="center">
-  <img src=""Clean Console Preview (1).png" width="100%">
+  <img src=""Clean Console Preview (1).png" alt="Clean Console Preview" width="100%">
 <p align="center">
-  <img src=""Clean Console Preview (2).png" width="100%">
+  <img src=""Clean Console Preview (2).png" alt="Clean Console Preview" width="100%">
 <p align="center">
-  <img src=""Clean Console Preview (3).png" width="100%">
+  <img src=""Clean Console Preview (3).png" alt="Clean Console Preview" width="100%">
 
 </p>
 
