@@ -1,12 +1,16 @@
 # Clean Console
 
 <p align="center">
-  <img src=""Clean Console Preview (1).png" alt="Clean Console Preview" width="100%">
-<p align="center">
-  <img src=""Clean Console Preview (2).png" alt="Clean Console Preview" width="100%">
-<p align="center">
-  <img src=""Clean Console Preview (3).png" alt="Clean Console Preview" width="100%">
+  <img src="Clean%20Console%20Preview%20(1).png" alt="Clean Console Preview" width="100%">
+</p>
 
+<p align="center">
+  <img src="Clean%20Console%20Preview%20(2).png" alt="Clean Console Preview" width="100%">
+</p>
+
+<p align="center">
+  <img src="Clean%20Console%20Preview%20(3).png" alt="Clean Console Preview" width="100%">
+</p>
 <p align="center">
   <b>Custom CSS Loader themes designed to deliver a more Clean Steam Big Picture experience.</b>
 </p>
@@ -15,7 +19,7 @@
 
 ## 📌 Table of Contents
 - [Installation](#-installation)
-  - [Option 1: Manual Installation](#-option-2-manual-installation)
+  - [Installation](#-option-2-manual-installation)
 - [Post-Installation Setup](#️-post-installation-profile-setup)
 - [Credits & Acknowledgments](#-credits--acknowledgments)
 
