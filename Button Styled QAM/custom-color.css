@@ -1,0 +1,18 @@
+:root {
+    --bsqam-icon-color-idle: white;
+    --bsqam-icon-background-idle: transparent;
+    --bsqam-icon-color-selected: black;
+    --bsqam-icon-background-selected: white;
+}
+
+/* Icons Filter - Idle*/
+._1S76C3gQf4oOTbLdTMVH0m {
+    color: var(--bsqam-icon-color-idle);
+    background: var(--bsqam-icon-background-idle);
+}
+
+/* Icons Filter - Selected */
+._1S76C3gQf4oOTbLdTMVH0m.quickaccessmenu_Selected_2QHMu, ._1S76C3gQf4oOTbLdTMVH0m.gpfocus {
+    color: var(--bsqam-icon-color-selected) !important;
+    background: var(--bsqam-icon-background-selected) !important;
+}

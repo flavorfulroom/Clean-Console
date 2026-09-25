@@ -1,0 +1,66 @@
+{
+    "name": "Button Styled QAM",
+    "author": "Leozito",
+    "version": "v1.0",
+    "manifest_version": 9,
+    "tabs": {
+        "default": [ "bigpicture", "QuickAccess" ]
+    },
+    "inject": {
+        "shared.css": []
+    },
+    "patches": {
+        "Custom Color": {
+            "type": "checkbox",
+            "default": "Yes",
+            "values": {
+                "No": {},
+                "Yes": {
+                    "custom-color.css": []
+                }
+            },
+            "components": [
+                {
+                    "name": "Icon - Idle",
+                    "type": "color-picker",
+                    "on": "Yes",
+                    "default": "#FFFFFF",
+                    "css_variable": "--bsqam-icon-color-idle",
+                    "tabs": []
+                },                {
+                    "name": "Button - Idle",
+                    "type": "color-picker",
+                    "on": "Yes",
+                    "default": "#00000000",
+                    "css_variable": "--bsqam-icon-background-idle",
+                    "tabs": []
+                },                {
+                    "name": "Icon - Selected",
+                    "type": "color-picker",
+                    "on": "Yes",
+                    "default": "#000000",
+                    "css_variable": "--bsqam-icon-color-selected",
+                    "tabs": []
+                },                {
+                    "name": "Button - Selected",
+                    "type": "color-picker",
+                    "on": "Yes",
+                    "default": "#FFFFFF",
+                    "css_variable": "--bsqam-icon-background-selected",
+                    "tabs": []
+                }
+            ]
+        },
+        "Enable Custom Padding (leave disabled if youre using an old Steam Version)": {
+            "type": "checkbox",
+            "default": "No",
+            "values": {
+                "No": {},
+                "Yes": {
+                    "enable-custom-padding.css": []
+                }
+            }
+        }
+    },
+    "id": "00739d61-6325-4ae0-8233-5e89559877bf"
+}

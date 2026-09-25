@@ -1,0 +1,41 @@
+:root {
+    --cb-icon-box-size: 48px;
+    --cb-icon-color: white;
+    --cb-icon-bg: rgba(172, 178, 201, 0.14);
+    --cb-icon-size: 12px;
+    --cb-icon-top-padding: 16px;
+    --cb-icon-side-padding: calc(2.8vw + 116px);
+}
+
+/* Icons (Idle & Problem) - Base Container */
+.QvHky2-yJGOkPJG16qeRL,
+.appdetailsplaysection_CloudSyncProblem_ {
+    height: var(--cb-icon-box-size);
+    width: var(--cb-icon-box-size);
+    box-sizing: border-box !important;
+    position: absolute;
+    top: var(--cb-icon-top-padding);
+    right: var(--cb-icon-side-padding);
+    background-color: var(--cb-icon-bg);
+    border-radius: var(--round-radius-size, 2px) !important;
+}
+
+/* Icons (Idle & Problem) - SVG Inside */
+.QvHky2-yJGOkPJG16qeRL:not(.gpfocus) ._1PrjvpmQ3CUjn45PN1Ed6V > svg,
+.appdetailsplaysection_CloudSyncProblem_:not(.gpfocus) ._1PrjvpmQ3CUjn45PN1Ed6V > svg {
+    padding-top: 1px;
+    height: var(--cb-icon-size);
+    width: var(--cb-icon-size);
+    color: var(--cb-icon-color);
+    transform: scale(2);
+}
+
+/* Hide Cloud Text */
+.appdetailsplaysection_CloudStatusLabel_fUTbl {
+    display: none;
+}
+
+/* Hide Cloud Line */
+.QvHky2-yJGOkPJG16qeRL:before, .QvHky2-yJGOkPJG16qeRL:after {
+    background-color: rgb(0, 0 , 0, 0);
+}

@@ -1,0 +1,60 @@
+{
+    "name": "Button Styled Cloud",
+    "author": "Leozito",
+    "version": "v1.0",
+    "manifest_version": 9,
+    "tabs": {
+        "default": [ "bigpicture" ]
+    },
+    "inject": {
+        "shared.css": []
+    },
+    "patches": {
+        "Icon Color": {
+            "type": "dropdown",
+            "default": "White",
+            "values": {
+                "White": {},
+                "Black": {
+                    "--cb-icon-color": [ "black" ]
+                },
+                "Custom": {}
+            },
+            "components": [
+                {
+                    "name": "Icon Color",
+                    "type": "color-picker",
+                    "on": "Custom",
+                    "default": "#FFF",
+                    "css_variable": "--cb-icon-color",
+                    "tabs": []
+                }
+            ]
+        },
+        "Background Color": {
+            "type": "dropdown",
+            "default": "Default",
+            "values": {
+                "Default": {},
+                "White": {
+                    "--cb-icon-bg": [ "white" ]
+                },
+                "Black": {
+                    "--cb-icon-bg": [ "black" ]
+                },
+                "Custom": {}
+            },
+            "components": [
+                {
+                    "name": "Background Color",
+                    "type": "color-picker",
+                    "on": "Custom",
+                    "default": "#000",
+                    "css_variable": "--cb-icon-bg",
+                    "tabs": []
+                }
+            ]
+        }
+    },
+    "id": "0af3fb02-8b65-4078-94bc-90aacdd3a9ad"
+}
