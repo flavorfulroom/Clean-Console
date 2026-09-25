@@ -7,8 +7,6 @@
 <p align="center">
   <img src=""Clean Console Preview (3).png" alt="Clean Console Preview" width="100%">
 
-</p>
-
 <p align="center">
   <b>Custom CSS Loader themes designed to deliver a more Clean Steam Big Picture experience.</b>
 </p>
