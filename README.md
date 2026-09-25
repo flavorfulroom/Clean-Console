@@ -89,6 +89,27 @@ To complete the setup for your profiles:
    - [ ] **Top Bar Padding**
    - [ ] **Volume Tweaker**
    - [ ] **White Xbox Buttons**
+
+   **LIST OF PLUGINS (some of these will NOT WORK on linux)**
+   
+   - [ ]Playhub
+   - [ ]Playhub Weather
+   - [ ]Playhub Artworks(this is for any heros that don't have a Clean Gameview option or a higher resolution version)
+   - [ ]Playhub Now Playing
+   - [ ]CSS Loader
+   - [ ]Trailer Hero
+   - [ ]Playtime
+   - [ ]Playhub Metadata
+   - [ ]Tabmaster
+   - [ ]SteamGridDB
+   - [ ]Playhub Themedeck
+   - [ ]Playercount
+   - [ ]Screenshot Uploader
+   - [ ]Playhub Notifications
+   - [ ]Playhub Launch Curtain
+   - [ ]Playhub Shortcuts
+   - [ ]Playhub Quick Settings
+   - [ ]SteamOS Friends activity(this does work on windows)
    </details>
 
 2. Click the **Settings** ⚙️ button on the top-right of CSS Loader.
