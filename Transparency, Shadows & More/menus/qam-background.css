@@ -1,0 +1,17 @@
+:root {
+    --tsam-qam-background: transparent;
+    --tsam-qam-title-background: var(--tsam-qam-background);
+    --tsam-qam-title-box-shadow-color: var(--tsam-qam-background);
+}
+
+/* Page Content */
+._2BB6uf--jFaAmdnwLOqMU7 {
+    background: var(--tsam-qam-background) !important;
+}
+
+/* Title */
+._34nl5vUoFCDYYnmHNL7axB {
+    background: var(--tsam-qam-title-background);
+    box-shadow: 0 0 7px 12px var(--tsam-qam-title-box-shadow-color);
+}
+

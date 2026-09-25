@@ -1,0 +1,96 @@
+:root {
+
+    /* Filters */
+    --tsam-glass: rgb(0, 0, 0, var(--tsam-glass-opacity));
+    --tsam-blur: blur(50px);
+    --tsam-dropshadows: drop-shadow(0 4px 6px rgba(0, 0, 0, .8));
+    --tsam-stroke:
+        drop-shadow(1px 0 0 rgba(0, 0, 0, .85))
+        drop-shadow(-0.5px 0 0 rgba(0, 0, 0, .85))
+        drop-shadow(0 1px 0 rgba(0, 0, 0, .85))
+        drop-shadow(0 -0.5px 0 rgba(0, 0, 0, .85));
+
+}
+
+/* Full QAM Scrolling */
+._2BB6uf--jFaAmdnwLOqMU7 {
+    padding-top: 0px;
+    padding-bottom: 0px
+}
+
+/* Fix Footer Heigh */
+._3T1iFy2maYycwqgFuzERyf {
+    max-height: 40px;
+}
+
+/* Game Title Shadows Overflow */
+.ZkD6We6MqGbOsa9K3yiY3 ._3CKjiR7-fuBPyKZKpPI6UZ,
+.BasicUI ._3gwMkKp82bb5aZj4EeQnpi,
+.BasicUI ._3gwMkKp82bb5aZj4EeQnpi ._3CRLA2FFclTRCznNBgtiIH,
+._12eKcQAZM2bwKDDQhiBCPr ._25QboeMYEk12Wt3i35P_EG,
+._1BtXgm_u14cFdsGMjTpY59,
+._12eKcQAZM2bwKDDQhiBCPr ._25QboeMYEk12Wt3i35P_EG {
+    overflow: visible;
+}
+
+.BasicUI ._3gwMkKp82bb5aZj4EeQnpi ._3DR9f2B3JQKviESgdrHp1u {
+    line-height: 1px;
+}
+
+/* Hide Elements */
+
+    /* Friends List */
+    .GamepadMode.friendlist, ._1osHa9KHOmdCDNrA232z4N.GamepadMode, .GamepadMode ._1osHa9KHOmdCDNrA232z4N, .multiChatDialog.GamepadMode.gpfocuswithin, .GamepadMode .multiChatDialog.gpfocuswithin, ._1E_SL1bTibeQ3PQRBZoS_-._2mRo586DqtPuSdxT1VRirS, .multiChatDialog.GamepadMode, .GamepadMode .multiChatDialog {
+        background: transparent !important;
+    }
+
+    .SteamDeckChats.gpfocuswithin ._2XZq-_f6npaQdAgeRzKIkz, .GamepadMode.friendlist.gpfocuswithin .FriendsListSteamDeckTopSection {
+        box-shadow: none !important;
+    }
+
+    ._12NNtyso3nbzJGi2XxHzcN:before {
+        background: transparent !important;
+    }
+
+    /* Main Menu Bottom Border */
+    [class*=_3kHmfV9Pej6JhVOBMGhcgq] {
+        box-shadow: none !important;
+    }
+
+    /* In-Game Panel - Background - Both Panels */
+    .sfthxkhui6WSgvnbllI_n {
+        background: transparent;
+    }
+
+    /* Profile Picture Border */
+    ._3h-QRJGxnVOIExtHD1R0f2 {
+        box-shadow: none;
+    }
+
+    /* Footer Border */
+    ._3T1iFy2maYycwqgFuzERyf {
+        border-top: none;
+    }
+
+    /* Game Title Text Shadow */
+    .BasicUI ._3gwMkKp82bb5aZj4EeQnpi ._3CRLA2FFclTRCznNBgtiIH {
+        text-shadow: none;
+    }
+
+    /* Playtime Icon Text Shadow */
+    ._12eKcQAZM2bwKDDQhiBCPr ._25QboeMYEk12Wt3i35P_EG {
+        text-shadow: none;
+    }
+
+    /* Playtime Text Text Shadow */
+    ._1BtXgm_u14cFdsGMjTpY59 {
+        text-shadow: none;
+    }
+
+    /* Context Menu Shadow */
+    .oZw50c4oJ6-r0HP8UWv25 {
+        filter: none;
+    }
+
+
+

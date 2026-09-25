@@ -1,0 +1,14 @@
+:root {
+    --tsam-footer-background: transparent;
+    --tsam-footer-backdrop-filter: none;
+}
+
+._3T1iFy2maYycwqgFuzERyf, ._3T1iFy2maYycwqgFuzERyf::before {
+    backdrop-filter: var(--tsam-footer-backdrop-filter);
+    background: var(--tsam-footer-background);
+}
+
+._3T1iFy2maYycwqgFuzERyf._2PZqiulqsNwAphWn25K5uZ {
+    backdrop-filter: var(--tsam-footer-backdrop-filter);
+    background: var(--tsam-footer-background);
+}

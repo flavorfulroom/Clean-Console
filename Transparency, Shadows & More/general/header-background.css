@@ -1,0 +1,26 @@
+:root {
+    --tsam-header-background: transparent;
+    --tsam-header-backdrop-filter: none;
+}
+
+._1E_SL1bTibeQ3PQRBZoS_-::before {
+    background: transparent;
+    backdrop-filter: var(--tsam-header-backdrop-filter);
+    opacity: 0;
+}
+
+._1E_SL1bTibeQ3PQRBZoS_- {
+    background: var(--tsam-header-background);
+    backdrop-filter: var(--tsam-header-backdrop-filter);
+    opacity: 1;
+}
+
+._1E_SL1bTibeQ3PQRBZoS_-._3x-XEqWonUA-lbEznRNgk2 {
+    backdrop-filter: var(--tsam-header-backdrop-filter);
+    background: var(--tsam-header-background);
+}
+
+._3k5MHjpKaOv6C29MKPgd6x {
+    backdrop-filter: var(--tsam-header-backdrop-filter);
+    background: var(--tsam-header-background);
+}

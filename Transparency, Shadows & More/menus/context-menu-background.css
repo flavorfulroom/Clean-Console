@@ -1,0 +1,58 @@
+:root {
+    --tsam-context-menu-highlight-background: var(--tsam-context-menu-background);
+    --tsam-context-menu-highlight-color: white;
+    --tsam-context-menu-highlight-filter: brightness(1.2);
+}
+
+/* Title Box */
+._2pq9my4HQChCImf0dPb9Kd {
+    backdrop-filter: var(--tsam-blur);
+    background: rgb(0, 0, 0, .2);
+    display: inline-block;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5.5px;
+    padding-bottom: 5px;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    overflow: visible !important;
+}
+
+/* Action Button */
+._34o03-8cUc3fQX1u650c0L.Stream, ._34o03-8cUc3fQX1u650c0L.Connect, ._34o03-8cUc3fQX1u650c0L.Launch, ._34o03-8cUc3fQX1u650c0L.PlayMusic, ._34o03-8cUc3fQX1u650c0L.Play, ._34o03-8cUc3fQX1u650c0L.Resume, ._34o03-8cUc3fQX1u650c0L.BorrowApp, ._34o03-8cUc3fQX1u650c0L.Download, ._34o03-8cUc3fQX1u650c0L.Update, ._34o03-8cUc3fQX1u650c0L.PreLoad, ._34o03-8cUc3fQX1u650c0L.Install, ._34o03-8cUc3fQX1u650c0L.Pause, ._34o03-8cUc3fQX1u650c0L.Stop, ._34o03-8cUc3fQX1u650c0L.Cancel {
+    background: var(--tsam-context-menu-background);
+    color: #FFFFFF80;
+}
+
+/* Normal Buttons */
+._34o03-8cUc3fQX1u650c0L {
+    background: var(--tsam-context-menu-background);
+    color: #FFFFFF80;
+}
+
+/* Custom Selection */
+._34o03-8cUc3fQX1u650c0L._3fVa8M_7D9Vjz28uYnahhd {
+    background: var(--tsam-context-menu-background);
+    color: white;
+    filter: brightness(1.2) saturate(1.5);
+}
+
+._34o03-8cUc3fQX1u650c0L._3-IFyrv9R_fZqALBsjlUS5.OQmT6NKuekm5HuXQnkl2a,
+._34o03-8cUc3fQX1u650c0L._2XVTVAadkIvrBujZYN5jbL {
+    background: var(--tsam-context-menu-highlight-background);
+    color: var(--tsam-context-menu-highlight-color);
+    filter: var(--tsam-context-menu-highlight-filter);
+}
+
+._34o03-8cUc3fQX1u650c0L._2XVTVAadkIvrBujZYN5jbL._1HXm3O7vOzyuTFDaKPNUxy, ._34o03-8cUc3fQX1u650c0L._2XVTVAadkIvrBujZYN5jbL.Stop, ._34o03-8cUc3fQX1u650c0L._2XVTVAadkIvrBujZYN5jbL.Cancel {
+    background: var(--tsam-context-menu-highlight-background);
+    color: var(--tsam-context-menu-highlight-color);
+    filter: var(--tsam-context-menu-highlight-filter);
+}
+
+/* Context Box */
+._3A5ujtARm6atH4phJ5i1i6>._16sYNwqxz6giarbVaRUl7R {
+    border: none;
+    background: var(--tsam-context-menu-background);
+}

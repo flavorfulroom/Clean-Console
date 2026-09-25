@@ -1,0 +1,13 @@
+:root {
+    --tsam-qam-sidebar-filter: none;
+}
+
+/* Icons Filter - Idle*/
+._1S76C3gQf4oOTbLdTMVH0m {
+    filter: var(--tsam-qam-sidebar-filter);
+}
+
+/* Icons Filter - Selected */
+._1S76C3gQf4oOTbLdTMVH0m.quickaccessmenu_Selected_2QHMu, ._1S76C3gQf4oOTbLdTMVH0m.gpfocus {
+    filter: none !important;
+}

@@ -1,0 +1,849 @@
+{
+    "name": "Transparency, Shadows & More",
+    "author": "Leozito",
+    "version": "v1.0",
+    "description": "Control transparency and shadows from interface elements for better visibility.",
+    "target": "System-Wide",
+    "manifest_version": 9,
+    "tabs": {
+        "default": [ "bigpicture", "MainMenu", "QuickAccess" ]
+    },
+    "inject": {
+        "shared.css": []
+    },
+    "patches": {
+        ".. General ..": {
+            "type": "none",
+            "values": {
+                "_": {}
+            }
+        },
+        "Header Background": {
+            "type": "dropdown",
+            "default": "Transparent",
+            "values": {
+                "Default": {},
+                "Transparent": {
+                    "general/header-background.css": []
+                },
+                "Blur": {
+                    "general/header-background.css": [],
+                    "--tsam-header-backdrop-filter": [ "var(--tsam-blur)" ]
+                },
+                "★ Glass": {
+                    "general/header-background.css": [],
+                    "--tsam-header-background": [ "var(--tsam-glass)" ]
+                },
+                "OLED Black": {
+                    "general/header-background.css": [],
+                    "--tsam-header-background": [ "black" ]
+                },
+                "☾ Global Pallete": {
+                    "general/header-background.css": [],
+                    "--tsam-header-background": [ "var(--tsam-global-pallete)" ]
+                },
+                "Custom": {
+                    "general/header-background.css": []
+                },
+                "Custom Gradient": {
+                    "general/header-background.css": [],
+                    "--tsam-header-background": [ "linear-gradient(90deg, var(--tsam-header-background-color-a), var(--tsam-header-background-color-b))" ]
+                }
+            },
+            "components": [
+                {
+                    "name": "Main Color",
+                    "type": "color-picker",
+                    "on": "Custom",
+                    "default": "#400040",
+                    "css_variable": "--tsam-header-background",
+                    "tabs": []
+                },
+                {
+                    "name": "Main Color A",
+                    "type": "color-picker",
+                    "on": "Custom Gradient",
+                    "default": "#bd5ece",
+                    "css_variable": "--tsam-header-background-color-a",
+                    "tabs": []
+                },
+                {
+                    "name": "Main Color B",
+                    "type": "color-picker",
+                    "on": "Custom Gradient",
+                    "default": "#2ab1ac",
+                    "css_variable": "--tsam-header-background-color-b",
+                    "tabs": []
+                }
+            ]
+        },
+        "Header Style": {
+            "type": "dropdown",
+            "default": "Dropshadows",
+            "values": {
+                "Default": {},
+                "Dropshadows": {
+                    "general/header-style.css": [],
+                    "--tsam-header-filter": [ "var(--tsam-dropshadows)" ]
+                },
+                "Stroke": {
+                    "general/header-style.css": [],
+                    "--tsam-header-filter": [ "var(--tsam-stroke)" ]
+                }
+            }
+        },
+        "Footer Background": {
+            "type": "dropdown",
+            "default": "Transparent",
+            "values": {
+                "Default": {},
+                "Transparent": {
+                    "general/footer-background.css": []
+                },
+                "Blur": {
+                    "general/footer-background.css": [],
+                    "--tsam-footer-backdrop-filter": [ "var(--tsam-blur)" ]
+                },
+                "★ Glass": {
+                    "general/footer-background.css": [],
+                    "--tsam-footer-background": [ "var(--tsam-glass)" ]
+                },
+                "OLED Black": {
+                    "general/footer-background.css": [],
+                    "--tsam-footer-background": [ "black" ]
+                },
+                "☾ Global Pallete": {
+                    "general/footer-background.css": [],
+                    "--tsam-footer-background": [ "var(--tsam-global-pallete)" ]
+                },
+                "Custom": {
+                    "general/footer-background.css": []
+                },
+                "Custom Gradient": {
+                    "general/footer-background.css": [],
+                    "--tsam-footer-background": [ "linear-gradient(90deg, var(--tsam-footer-background-color-a), var(--tsam-footer-background-color-b))" ]
+                }
+            },
+            "components": [
+                {
+                    "name": "Main Color",
+                    "type": "color-picker",
+                    "on": "Custom",
+                    "default": "#400040",
+                    "css_variable": "--tsam-footer-background",
+                    "tabs": []
+                },
+                {
+                    "name": "Main Color A",
+                    "type": "color-picker",
+                    "on": "Custom Gradient",
+                    "default": "#bd5ece",
+                    "css_variable": "--tsam-footer-background-color-a",
+                    "tabs": []
+                },
+                {
+                    "name": "Main Color B",
+                    "type": "color-picker",
+                    "on": "Custom Gradient",
+                    "default": "#2ab1ac",
+                    "css_variable": "--tsam-footer-background-color-b",
+                    "tabs": []
+                }
+            ]
+        },
+        "Footer Style": {
+            "type": "dropdown",
+            "default": "Dropshadows",
+            "values": {
+                "Default": {},
+                "Dropshadows": {
+                    "general/footer-style.css": [],
+                    "--tsam-footer-filter": [ "var(--tsam-dropshadows)" ]
+                },
+                "Stroke": {
+                    "general/footer-style.css": [],
+                    "--tsam-footer-filter": [ "var(--tsam-stroke)" ]
+                }
+            }
+        },
+        "Root Background": {
+            "type": "dropdown",
+            "default": "Default",
+            "values": {
+                "Default": {},
+                "OLED Black": {
+                    "general/root-background.css": [],
+                    "--tsam-root-background": [ "black" ]
+                },
+                "☾ Global Pallete": {
+                    "general/root-background.css": [],
+                    "--tsam-root-background": [ "var(--tsam-global-pallete)" ]
+                },
+                "Custom": {
+                    "general/root-background.css": []
+                },
+                "Custom Gradient": {
+                    "general/root-background.css": [],
+                    "--tsam-root-background": [ "linear-gradient(90deg, var(--tsam-root-background-color-a), var(--tsam-root-background-color-b))" ]
+                }
+            },
+            "components": [
+                {
+                    "name": "Main Color",
+                    "type": "color-picker",
+                    "on": "Custom",
+                    "default": "#400040",
+                    "css_variable": "--tsam-root-background",
+                    "tabs": []
+                },
+                {
+                    "name": "Main Color A",
+                    "type": "color-picker",
+                    "on": "Custom Gradient",
+                    "default": "#bd5ece",
+                    "css_variable": "--tsam-root-background-color-a",
+                    "tabs": []
+                },
+                {
+                    "name": "Main Color B",
+                    "type": "color-picker",
+                    "on": "Custom Gradient",
+                    "default": "#2ab1ac",
+                    "css_variable": "--tsam-root-background-color-b",
+                    "tabs": []
+                }
+            ]
+        },
+        ".. Home ..": {
+            "type": "none",
+            "values": {
+                "_": {}
+            }
+        },
+        "Game Title Color": {
+            "type": "dropdown",
+            "default": "White",
+            "values": {
+                "Default": {},
+                "White": {
+                    "home/game-title-color.css": [],
+                    "--tasm-game-title-color": [ "#FFFFFF" ]
+                },
+                "Black": {
+                    "home/game-title-color.css": [],
+                    "--tasm-game-title-color": [ "#000000" ]
+                },
+                "Grey": {
+                    "home/game-title-color.css": [],
+                    "--tasm-game-title-color": [ "#808080" ]
+                },
+                "Transparent (Hidden)": {
+                    "home/game-title-color.css": [],
+                    "--tasm-game-title-color": [ "#00000000" ]
+                },
+                "Custom": {
+                    "home/game-title-color.css": []
+                }
+            },
+            "components": [
+                {
+                    "name": "Main Color",
+                    "type": "color-picker",
+                    "on": "Custom",
+                    "default": "#800080",
+                    "css_variable": "--tasm-game-title-color",
+                    "tabs": []
+                }
+            ]
+        },
+        "Game Title Style": {
+            "type": "dropdown",
+            "default": "Dropshadows",
+            "values": {
+                "Default": {},
+                "Hidden": {
+                    "home/game-title-hide.css": []
+                },
+                "Dropshadows": {
+                    "home/game-title-style.css": [],
+                    "--tasm-game-title-filter": [ "var(--tsam-dropshadows)" ]
+                },
+                "Stroke": {
+                    "home/game-title-style.css": [],
+                    "--tasm-game-title-filter": [ "var(--tsam-stroke)" ]
+                }
+            }
+        },
+        "Playtime Icon Color": {
+            "type": "dropdown",
+            "default": "Grey",
+            "values": {
+                "Default": {},
+                "White": {
+                    "home/playtime-icon-color.css": [],
+                    "--tasm-playtime-icon-color": [ "#FFFFFF" ]
+                },
+                "Black": {
+                    "home/playtime-icon-color.css": [],
+                    "--tasm-playtime-icon-color": [ "#000000" ]
+                },
+                "Grey": {
+                    "home/playtime-icon-color.css": [],
+                    "--tasm-playtime-icon-color": [ "#808080" ]
+                },
+                "Transparent (Hidden)": {
+                    "home/playtime-icon-color.css": [],
+                    "--tasm-playtime-icon-color": [ "#00000000" ]
+                },
+                "Custom": {
+                    "home/playtime-icon-color.css": []
+                }
+            },
+            "components": [
+                {
+                    "name": "Main Color",
+                    "type": "color-picker",
+                    "on": "Custom",
+                    "default": "#800080",
+                    "css_variable": "--tasm-playtime-icon-color",
+                    "tabs": []
+                }
+            ]
+        },
+        "Playtime Text Color": {
+            "type": "dropdown",
+            "default": "Grey",
+            "values": {
+                "Default": {},
+                "White": {
+                    "home/playtime-text-color.css": [],
+                    "--tasm-playtime-text-color": [ "#FFFFFF" ]
+                },
+                "Black": {
+                    "home/playtime-text-color.css": [],
+                    "--tasm-playtime-text-color": [ "#000000" ]
+                },
+                "Grey": {
+                    "home/playtime-text-color.css": [],
+                    "--tasm-playtime-text-color": [ "#E6E6E6" ]
+                },
+                "Transparent (Hidden)": {
+                    "home/playtime-text-color.css": [],
+                    "--tasm-playtime-text-color": [ "#00000000" ]
+                },
+                "Custom": {
+                    "home/playtime-text-color.css": []
+                }
+            },
+            "components": [
+                {
+                    "name": "Main Color",
+                    "type": "color-picker",
+                    "on": "Custom",
+                    "default": "#800080",
+                    "css_variable": "--tasm-playtime-text-color",
+                    "tabs": []
+                }
+            ]
+        },
+        "Playtime Style": {
+            "type": "dropdown",
+            "default": "Dropshadows",
+            "values": {
+                "Default": {},
+                "Hidden": {
+                    "home/playtime-hide.css": []
+                },
+                "Dropshadows": {
+                    "home/playtime-style.css": [],
+                    "--tasm-playtime-filter": [ "var(--tsam-dropshadows)" ]
+                },
+                "Stroke": {
+                    "home/playtime-style.css": [],
+                    "--tasm-playtime-filter": [ "var(--tsam-stroke)" ]
+                }
+            }
+        },
+        "Carousel Shadows": {
+            "type": "dropdown",
+            "default": "Dropshadows",
+            "values": {
+                "Default": {},
+                "Dropshadows": {
+                    "home/carousel-shadows.css": []
+                },
+                "Hide Hover/Focus": {
+                    "home/carousel-shadows.css": [],
+                    "--tsam-box-shadow-hover": [ "none" ]
+                },
+                "Hide Idle": {
+                    "home/carousel-shadows.css": [],
+                    "--tsam-box-shadow-idle": [ "none" ]
+                },
+                "Hidden": {
+                    "home/carousel-shadows.css": [],
+                    "--tsam-box-shadow-hover": [ "none" ],
+                    "--tsam-box-shadow-idle": [ "none" ]
+                }
+            }
+        },
+        ".. Gameview ..": {
+            "type": "none",
+            "values": {
+                "_": {}
+            }
+        },
+        "Gameview Logo Style": {
+            "type": "dropdown",
+            "default": "Dropshadows",
+            "values": {
+                "Default": {},
+                "Hidden": {
+                    "gameview/gameview-logo-style.css": [],
+                    "--tsam-gameview-logo-opacity": [ "0" ]
+                },
+                "Dropshadows": {
+                    "gameview/gameview-logo-style.css": [],
+                    "--tsam-gameview-logo-filter": [ "var(--tsam-dropshadows)" ]
+                },
+                "Stroke": {
+                    "gameview/gameview-logo-style.css": [],
+                    "--tsam-gameview-logo-filter": [ "var(--tsam-stroke)" ]
+                }
+            }
+        },
+        "Last Played Style": {
+            "type": "dropdown",
+            "default": "Default",
+            "values": {
+                "Default": {},
+                "Hidden": {
+                    "gameview/last-played-style.css": [],
+                    "--tsam-last-played-opacity": [ "0" ]
+                },
+                "Dropshadows": {
+                    "gameview/last-played-style.css": [],
+                    "--tsam-last-played-filter": [ "var(--tsam-dropshadows)" ]
+                },
+                "Stroke": {
+                    "gameview/last-played-style.css": [],
+                    "--tsam-last-played-filter": [ "var(--tsam-stroke)" ]
+                }
+            }
+        },
+        "Game Launch Logo Style": {
+            "type": "dropdown",
+            "default": "Dropshadows",
+            "values": {
+                "Default": {},
+                "Hidden": {
+                    "gameview/launch-logo-style.css": [],
+                    "--tsam-launch-logo-opacity": [ "0" ]
+                },
+                "Dropshadows": {
+                    "gameview/launch-logo-style.css": [],
+                    "--tsam-launch-logo-filter": [ "var(--tsam-dropshadows)" ]
+                },
+                "Stroke": {
+                    "gameview/launch-logo-style.css": [],
+                    "--tsam-launch-logo-filter": [ "var(--tsam-stroke)" ]
+                }
+            }
+        },
+        ".. Menus ..": {
+            "type": "none",
+            "values": {
+                "_": {}
+            }
+        },
+        "Main Menu Background": {
+            "type": "dropdown",
+            "default": "★ Glass",
+            "values": {
+                "Default": {},
+                "★ Glass": {
+                    "menus/main-menu-background.css": [],
+                    "--tsam-main-menu-background": [ "var(--tsam-glass)" ]
+                },
+                "OLED Black": {
+                    "menus/main-menu-background.css": [],
+                    "--tsam-main-menu-background": [ "black" ]
+                },
+                "☾ Global Pallete": {
+                    "menus/main-menu-background.css": [],
+                    "--tsam-main-menu-background": [ "var(--tsam-global-pallete)" ]
+                },
+                "Custom": {
+                    "menus/main-menu-background.css": []
+                },
+                "Custom Gradient": {
+                    "menus/main-menu-background.css": [],
+                    "--tsam-main-menu-background": [ "linear-gradient(90deg, var(--tsam-main-menu-background-color-a), var(--tsam-main-menu-background-color-b))" ]
+                }
+            },
+            "components": [
+                {
+                    "name": "Main Color",
+                    "type": "color-picker",
+                    "on": "Custom",
+                    "default": "#400040",
+                    "css_variable": "--tsam-main-menu-background",
+                    "tabs": []
+                },
+                {
+                    "name": "Main Color A",
+                    "type": "color-picker",
+                    "on": "Custom Gradient",
+                    "default": "#bd5ece",
+                    "css_variable": "--tsam-main-menu-background-color-a",
+                    "tabs": []
+                },
+                {
+                    "name": "Main Color B",
+                    "type": "color-picker",
+                    "on": "Custom Gradient",
+                    "default": "#2ab1ac",
+                    "css_variable": "--tsam-main-menu-background-color-b",
+                    "tabs": []
+                }
+            ]
+        },
+        "Context Menu Background": {
+            "type": "dropdown",
+            "default": "★ Glass",
+            "values": {
+                "Default": {},
+                "★ Glass": {
+                    "menus/context-menu-background.css": [],
+                    "--tsam-context-menu-background": [ "var(--tsam-glass)" ],
+                    "--tsam-context-menu-highlight-background": [ "rgb(80, 80, 80, var(--tsam-glass-opacity))"],
+                    "--tsam-context-menu-highlight-filter": [ "none" ]
+                },
+                "OLED Black": {
+                    "menus/context-menu-background.css": [],
+                    "--tsam-context-menu-background": [ "black" ],
+                    "--tsam-context-menu-highlight-background": [ "white" ],
+                    "--tsam-context-menu-highlight-color": [ "black" ],
+                    "--tsam-context-menu-highlight-filter": [ "none" ]
+                },
+                "☾ Global Pallete": {
+                    "menus/context-menu-background.css": [],
+                    "--tsam-context-menu-background": [ "var(--tsam-global-pallete)" ]
+                },
+                "Custom": {
+                    "menus/context-menu-background.css": []
+                },
+                "Custom Gradient": {
+                    "menus/context-menu-background.css": [],
+                    "--tsam-context-menu-background": [ "linear-gradient(90deg, var(--tsam-context-menu-background-color-a), var(--tsam-context-menu-background-color-b))" ]
+                }
+            },
+            "components": [
+                {
+                    "name": "Main Color",
+                    "type": "color-picker",
+                    "on": "Custom",
+                    "default": "#400040",
+                    "css_variable": "--tsam-context-menu-background",
+                    "tabs": []
+                },
+                {
+                    "name": "Main Color A",
+                    "type": "color-picker",
+                    "on": "Custom Gradient",
+                    "default": "#bd5ece",
+                    "css_variable": "--tsam-context-menu-background-color-a",
+                    "tabs": []
+                },
+                {
+                    "name": "Main Color B",
+                    "type": "color-picker",
+                    "on": "Custom Gradient",
+                    "default": "#2ab1ac",
+                    "css_variable": "--tsam-context-menu-background-color-b",
+                    "tabs": []
+                }
+            ]
+        },
+        "Sidebar Background": {
+            "type": "dropdown",
+            "default": "Transparent",
+            "values": {
+                "Default": {},
+                "Transparent": {
+                    "menus/sidebar-background.css": []
+                },
+                "★ Glass": {
+                    "menus/sidebar-background.css": [],
+                    "--tsam-sidebar-background": [ "var(--tsam-glass)" ]
+                },
+                "OLED Black": {
+                    "menus/sidebar-background.css": [],
+                    "--tsam-sidebar-background": [ "black" ]
+                },
+                "☾ Global Pallete": {
+                    "menus/sidebar-background.css": [],
+                    "--tsam-sidebar-background": [ "var(--tsam-global-pallete)" ]
+                },
+                "Custom": {
+                    "menus/sidebar-background.css": []
+                },
+                "Custom Gradient": {
+                    "menus/sidebar-background.css": [],
+                    "--tsam-sidebar-background": [ "linear-gradient(90deg, var(--tsam-sidebar-background-color-a), var(--tsam-sidebar-background-color-b))" ]
+                }
+            },
+            "components": [
+                {
+                    "name": "Main Color",
+                    "type": "color-picker",
+                    "on": "Custom",
+                    "default": "#400040",
+                    "css_variable": "--tsam-sidebar-background",
+                    "tabs": []
+                },
+                {
+                    "name": "Main Color A",
+                    "type": "color-picker",
+                    "on": "Custom Gradient",
+                    "default": "#bd5ece",
+                    "css_variable": "--tsam-sidebar-background-color-a",
+                    "tabs": []
+                },
+                {
+                    "name": "Main Color B",
+                    "type": "color-picker",
+                    "on": "Custom Gradient",
+                    "default": "#2ab1ac",
+                    "css_variable": "--tsam-sidebar-background-color-b",
+                    "tabs": []
+                }
+            ]
+        },
+        "Sidebar Style": {
+            "type": "dropdown",
+            "default": "Dropshadows",
+            "values": {
+                "Default": {},
+                "Dropshadows": {
+                    "menus/sidebar-style.css": [],
+                    "--tsam-qam-sidebar-filter": [ "var(--tsam-dropshadows)" ]
+                },
+                "Stroke": {
+                    "menus/sidebar-style.css": [],
+                    "--tsam-qam-sidebar-filter": [ "var(--tsam-stroke)" ]
+                }
+            }
+        },
+        "QAM Background": {
+            "type": "dropdown",
+            "default": "★ Glass",
+            "values": {
+                "Default": {},
+                "Transparent": {
+                    "menus/qam-background.css": []
+                },
+                "★ Glass": {
+                    "menus/qam-background.css": [],
+                    "--tsam-qam-background": [ "var(--tsam-glass)" ],
+                    "--tsam-qam-title-background": [ "transparent" ],
+                    "--tsam-qam-title-box-shadow-color": [ "transparent" ]
+                },
+                "OLED Black": {
+                    "menus/qam-background.css": [],
+                    "--tsam-qam-background": [ "black" ]
+                },
+                "☾ Global Pallete": {
+                    "menus/qam-background.css": [],
+                    "--tsam-qam-background": [ "var(--tsam-global-pallete)" ]
+                },
+                "Custom": {
+                    "menus/qam-background.css": []
+                },
+                "Custom Gradient": {
+                    "menus/qam-background.css": [],
+                    "--tsam-qam-background": [ "linear-gradient(90deg, var(--tsam-qam-background-color-a), var(--tsam-qam-background-color-b))" ],
+                    "--tsam-qam-title-background": [ "transparent" ],
+                    "--tsam-qam-title-box-shadow-color": [ "transparent" ]
+                }
+            },
+            "components": [
+                {
+                    "name": "Main Color",
+                    "type": "color-picker",
+                    "on": "Custom",
+                    "default": "#400040",
+                    "css_variable": "--tsam-qam-background",
+                    "tabs": []
+                },
+                {
+                    "name": "Main Color A",
+                    "type": "color-picker",
+                    "on": "Custom Gradient",
+                    "default": "#bd5ece",
+                    "css_variable": "--tsam-qam-background-color-a",
+                    "tabs": []
+                },
+                {
+                    "name": "Main Color B",
+                    "type": "color-picker",
+                    "on": "Custom Gradient",
+                    "default": "#2ab1ac",
+                    "css_variable": "--tsam-qam-background-color-b",
+                    "tabs": []
+                }
+            ]
+        },
+        ".. In-game Menus ..": {
+            "type": "none",
+            "values": {
+                "_": {}
+            }
+        },
+        "In-game Menu Background": {
+            "type": "dropdown",
+            "default": "Custom Gradient",
+            "values": {
+                "Default": {},
+                "★ Glass": {
+                    "menus/ingame-menu-background.css": [],
+                    "--tsam-ingame-menu-background": [ "var(--tsam-glass)" ]
+                },
+                "OLED Black": {
+                    "menus/ingame-menu-background.css": [],
+                    "--tsam-ingame-menu-background": [ "black" ]
+                },
+                "☾ Global Pallete": {
+                    "menus/ingame-menu-background.css": [],
+                    "--tsam-ingame-menu-background": [ "var(--tsam-global-pallete)" ]
+                },
+                "Custom": {
+                    "menus/ingame-menu-background.css": []
+                },
+                "Custom Gradient": {
+                    "menus/ingame-menu-background.css": [],
+                    "--tsam-ingame-menu-background": [ "linear-gradient(90deg, var(--tsam-ingame-menu-background-color-a), var(--tsam-ingame-menu-background-color-b))" ]
+                }
+            },
+            "components": [
+                {
+                    "name": "Main Color",
+                    "type": "color-picker",
+                    "on": "Custom",
+                    "default": "#400040",
+                    "css_variable": "--tsam-ingame-menu-background",
+                    "tabs": []
+                },
+                {
+                    "name": "Main Color A",
+                    "type": "color-picker",
+                    "on": "Custom Gradient",
+                    "default": "#bd5ece",
+                    "css_variable": "--tsam-ingame-menu-background-color-a",
+                    "tabs": []
+                },
+                {
+                    "name": "Main Color B",
+                    "type": "color-picker",
+                    "on": "Custom Gradient",
+                    "default": "#2ab1ac",
+                    "css_variable": "--tsam-ingame-menu-background-color-b",
+                    "tabs": []
+                }
+            ]
+        },
+        "Controller Menu Background": {
+            "type": "dropdown",
+            "default": "OLED Black",
+            "values": {
+                "Default": {},
+                "★ Glass": {
+                    "menus/controller-menu-background.css": [],
+                    "--tsam-controller-menu-background": [ "var(--tsam-glass)" ]
+                },
+                "OLED Black": {
+                    "menus/controller-menu-background.css": [],
+                    "--tsam-controller-menu-background": [ "black" ]
+                },
+                "☾ Global Pallete": {
+                    "menus/controller-menu-background.css": [],
+                    "--tsam-controller-menu-background": [ "var(--tsam-global-pallete)" ]
+                },
+                "Custom": {
+                    "menus/controller-menu-background.css": []
+                },
+                "Custom Gradient": {
+                    "menus/controller-menu-background.css": [],
+                    "--tsam-controller-menu-background": [ "linear-gradient(90deg, var(--tsam-controller-menu-background-color-a), var(--tsam-controller-menu-background-color-b))" ]
+                }
+            },
+            "components": [
+                {
+                    "name": "Main Color",
+                    "type": "color-picker",
+                    "on": "Custom",
+                    "default": "#400040",
+                    "css_variable": "--tsam-controller-menu-background",
+                    "tabs": []
+                },
+                {
+                    "name": "Main Color A",
+                    "type": "color-picker",
+                    "on": "Custom Gradient",
+                    "default": "#bd5ece",
+                    "css_variable": "--tsam-controller-menu-background-color-a",
+                    "tabs": []
+                },
+                {
+                    "name": "Main Color B",
+                    "type": "color-picker",
+                    "on": "Custom Gradient",
+                    "default": "#2ab1ac",
+                    "css_variable": "--tsam-controller-menu-background-color-b",
+                    "tabs": []
+                }
+            ]
+        },
+        ".. Global Tweaks ..": {
+            "type": "none",
+            "values": {
+                "_": {}
+            }
+        },
+        "☾ Global Pallete": {
+            "type": "checkbox",
+            "default": "No",
+            "values": {
+                "No": {
+                    "--tsam-global-pallete": [ "#0e141b" ]
+                },
+                "Yes": {}
+            },
+            "components": [
+                {
+                    "name": "Main Color",
+                    "type": "color-picker",
+                    "on": "Yes",
+                    "default": "#404040",
+                    "css_variable": "--tsam-global-pallete",
+                    "tabs": []
+                }
+            ]
+        },
+        "★ Glass Opacity": {
+            "type": "slider",
+            "default": "0.8",
+            "values": {
+                "0.1": { "--tsam-glass-opacity": [ "0.1" ] },
+                "0.2": { "--tsam-glass-opacity": [ "0.2" ] },
+                "0.3": { "--tsam-glass-opacity": [ "0.3" ] },
+                "0.4": { "--tsam-glass-opacity": [ "0.4" ] },
+                "0.5": { "--tsam-glass-opacity": [ "0.5" ] },
+                "0.6": { "--tsam-glass-opacity": [ "0.6" ] },
+                "0.7": { "--tsam-glass-opacity": [ "0.7" ] },
+                "0.8": { "--tsam-glass-opacity": [ "0.8" ] },
+                "0.9": { "--tsam-glass-opacity": [ "0.9" ] }
+            }
+        }
+    }
+}

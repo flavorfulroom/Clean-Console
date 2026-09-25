@@ -1,0 +1,18 @@
+:root {
+    --tsam-header-filter: none;
+}
+
+/* Search */
+.FlexGrowUniversalSearch ._17M8gvakqjyaw_cLo6ntdl {
+    filter: var(--tsam-header-filter);
+}
+
+/* Other icons */
+._2HnVd7wV6yVaTiXfrBe3gq._8sPcK-HDVUh0QbFshamLa {
+    filter: var(--tsam-header-filter);
+}
+
+/* Clock */
+._1HhLUvHH6BZLIOyOE80TVh:not(._2IsmzUdOq5mgVorXJRqLSo) {
+    filter: var(--tsam-header-filter);
+}

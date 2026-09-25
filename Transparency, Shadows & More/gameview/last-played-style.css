@@ -1,0 +1,9 @@
+:root {
+    --tsam-last-played-opacity: 1;
+    --tsam-last-played-filter: none;
+}
+
+._1YbtIWcfkQJOysLXQbwzRf {
+    opacity: var(--tsam-last-played-opacity);
+    filter: var(--tsam-last-played-filter);
+}

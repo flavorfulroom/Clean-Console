@@ -1,0 +1,9 @@
+:root {
+    --tsam-launch-logo-opacity: 1;
+    --tsam-launch-logo-filter: none;
+}
+
+._2uvMXiAbRHw9k3P6oyGdFz img {
+    opacity: var(--tsam-launch-logo-opacity);
+    filter: var(--tsam-launch-logo-filter);
+}

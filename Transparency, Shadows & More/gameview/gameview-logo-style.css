@@ -1,0 +1,9 @@
+:root {
+    --tsam-gameview-logo-opacity: 1;
+    --tsam-gameview-logo-filter: none;
+}
+
+._2Eh7Soh97QONu_grMi2m66 {
+    opacity: var(--tsam-gameview-logo-opacity);
+    filter: var(--tsam-gameview-logo-filter);
+}
