@@ -1,0 +1,12 @@
+/* Header Black Gradient */
+.BasicUI ._1IWSiRVmH1DlNlWSaBeUuZ {
+    width: 100vw;
+    height: 100vh;
+    background: var(--CGV-gradient-filter);
+    z-index: 1;
+}
+
+/* Remove Gradient from logo */
+._2Eh7Soh97QONu_grMi2m66 {
+    z-index: 2;
+}

@@ -1,0 +1,121 @@
+:root {
+    --CGV-hero-position: center;
+    --CGV-hero-alignment: cover;
+    --CGV-hero-height: calc(100vh - var(--CGV-playbar-total-height));
+    --CGV-footer-height: 40px;
+    --CGV-playbar-height: 80px;
+    --CGV-playbar-total-height: calc(var(--CGV-playbar-height) + var(--CGV-footer-height));
+    --CGV-play-anim-start-height: calc(100vh - var(--CGV-playbar-total-height));
+    --CGV-play-anim-final-height: 100vh;
+    --CGV-playbar-background: rgba(6, 9, 13, .6);
+    --CGV-playbar-background-filter: none;
+    --cgv-buttons-bg: rgba(172, 178, 201, 0.14);
+
+    /* Darkening controls */
+    --CGV-hero-brightness: 0.60;        /* 1 = original, lower = darker */
+}
+
+/* Hero Height */
+.sharedappdetailsheader_HeaderBackgroundImage_1sarA {
+    height: var(--CGV-hero-height);
+}
+
+/* Hero Alignment + Darkening */
+.sharedappdetailsheader_ImgSrc__dije {
+    object-position: var(--CGV-hero-position);
+    object-fit: var(--CGV-hero-alignment);
+    filter: brightness(var(--CGV-hero-brightness));
+}
+
+/* Total Playbar Size */
+.basicappdetailssectionstyler_PlaySection_3scbH {
+    height: var(--CGV-playbar-total-height);
+}
+
+/* Playbar background */
+.BasicUI ._3fp5y6tdU77MdrCQZt_aS9 {
+    background: var(--CGV-playbar-background);
+    backdrop-filter: var(--CGV-playbar-background-filter);
+}
+
+/* Play Button - Idle */
+.BasicUI .QsZdWtHTlIK9KIKbscNTt {
+    background: var(--cgv-buttons-bg);
+}
+
+/* Config and Controller */
+._3qDWQGB0rtwM3qpXTb11Q- {
+    background-color: var(--cgv-buttons-bg);
+}
+
+/* Animation */
+
+    /* Playbar Height Start */
+    .BasicUI .sharedappdetailsheader_TopCapsule_2meE3 {
+        height: var(--CGV-play-anim-start-height);
+    }
+
+    /* Playbar Animation */
+    .BasicUI .sharedappdetailsheader_TopCapsule_2meE3.sharedappdetailsheader_FullscreenEnterStart_P7eLv {
+        animation-name: makethinggodown;
+        animation-duration: 1s;
+    }
+
+    /* Playbar Height End */
+    .BasicUI .sharedappdetailsheader_TopCapsule_2meE3.sharedappdetailsheader_FullscreenEnterDone_1PRtu {
+        height: var(--CGV-play-anim-final-height);
+    }
+
+    @keyframes makethinggodown {
+        from {height: var(--CGV-play-anim-start-height);}
+        to {height: var(--CGV-play-anim-final-height);}
+    }
+
+
+/* ===== Activity / Game View backdrop darkening ===== */
+:root {
+    --CGV-backdrop-mid: ;   /* top-left glow */
+    --CGV-backdrop-dark: ;  /* main tone */
+    --CGV-backdrop-end: ;   /* bottom-right */
+    --CGV-card-header: ;
+    --CGV-card-body: ;
+}
+
+/* Backdrop behind the Activity / Your Stuff / Community / Game Info tabs */
+.BasicUI .basicappdetailssectionstyler_AppDetailsContainer_2-ns_ {
+    background: radial-gradient(155.42% 100% at 0% 0%,
+        var(--CGV-backdrop-mid) 40%,
+        var(--CGV-backdrop-dark) 60%,
+        var(--CGV-backdrop-end) 80%);
+}
+
+/* Friend activity cards (header row + body) */
+.BasicUI .appactivityday_Event_UVeN0 .appactivityday_EventHeadline_QCKBq {
+    background: var(--CGV-card-header);
+}
+.BasicUI .appactivityday_Event_UVeN0 .appactivityday_EventBody_NEMXh {
+    background: var(--CGV-card-body);
+}
+.BasicUI .appactivityday_ActivityAchievementUnlocked_yJLy7 {
+    background-color: var(--CGV-card-body);
+}
+.BasicUI .appactivityday_PartnerEventTextOnly_Container_1wJJQ {
+    background-color: var(--CGV-card-body);
+}
+.BasicUI .appactivityday_PartnerEventLargeImage_Contents_2tDv0 {
+    background-color: var(--CGV-card-body);
+}
+.BasicUI .appactivityday_PartnerEventPartnerEventMediumImage_Contents_2gv3E {
+    background-color: var(--CGV-card-body);
+}
+.BasicUI 	._2MKO5j24KqDdD-92hH5FXi {
+    background-color: var(--CGV-card-body);
+}
+
+/* Right-column sections and wishlist/"Say something" boxes */
+.BasicUI .appdetailssection_AppDetailsSectionContainer_31ptF.appdetailssection_RightColumnSection_3KfxI {
+    background: var(--CGV-card-body);
+}
+.BasicUI .posttextentry_PostTextEntry_3x31A .posttextentry_PostTextEntryArea_1JlC2 {
+    background-color: var(--CGV-card-header);
+}

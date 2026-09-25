@@ -1,0 +1,131 @@
+{
+    "name": "Clean Gameview",
+    "author": "SuchMeme, Leozito, Flavorfulroom",
+    "version": "v1.9 Lz,Fl",
+    "description": "Fullscreen clean gameview.",
+    "manifest_version": 9,
+    "tabs": {
+        "default": [ "bigpicture" ]
+    },
+    "inject": {
+        "shared.css": []
+    },
+    "patches": {
+        "Art Cover Alignment": {
+            "type": "dropdown",
+            "default": "Cover",
+            "values": {
+                "Cover": {},
+                "Contain": {
+                    "--CGV-hero-alignment": [ "contain" ]
+                },
+                "Stretch": {
+                    "--CGV-hero-alignment": [ "stretch" ]
+                },
+                "Left": {
+                    "--CGV-hero-position": [ "left" ]
+                },
+                "Right": {
+                    "--CGV-hero-position": [ "right" ]
+                }
+            }
+        },
+        "Art Cover Gradient": {
+            "type": "dropdown",
+            "default": "None",
+            "values": {
+                "Default": {},
+                "None": {
+                    "gradient.css": [],
+                    "--CGV-gradient-filter": [ "transparent" ]
+                },
+                "Radial Gradient": {
+                    "gradient.css": [],
+                    "--CGV-gradient-filter": [ "radial-gradient(ellipse farthest-corner at 50% 35%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.5) 80%, rgba(0, 0, 0, 0.8) 100%)" ]
+                }
+            }
+        },
+        "Lock Logo": {
+            "type": "checkbox",
+            "default": "Yes",
+            "values": {
+                "No": {},
+                "Yes": {
+                    "locked-logo.css": []
+                }
+            }
+        },
+        "Playbar Style": {
+            "type": "dropdown",
+            "default": "Semi-transparent",
+            "values": {
+                "Connected": {},
+                "Semi-transparent": {
+                    "--CGV-hero-height": [ "100vh" ],
+                    "--CGV-playbar-background": [ "rgba(0, 0, 0, .8)" ]
+                },
+                "Fully Transparent": {
+                    "--CGV-hero-height": [ "100vh" ],
+                    "--CGV-playbar-background": [ "transparent" ]
+                },
+                "Blurred": {
+                    "--CGV-hero-height": [ "100vh" ],
+                    "--CGV-playbar-background-filter": [ "blur(8px)" ]
+                }
+            }
+        },
+        "Steam Cloud": {
+            "type": "dropdown",
+            "default": "Button",
+            "values": {
+                "Default": {},
+                "Icon": {
+                    "steam-cloud.css": [],
+                    "--cgv-icon-bg": [ "transparent !important" ]
+                },
+                "Button": {
+                    "steam-cloud.css": [],
+                    "--cgv-icon-size": [ "12px" ],
+                    "--cgv-icon-top-padding": [ "16px" ]
+                }
+            }
+        },
+        "Footer Height": {
+            "type": "dropdown",
+            "default": "40px",
+            "values": {
+                "40px": {},
+                "30px": {
+                    "--CGV-footer-height": [ "30px" ]
+                },
+                "20px": {
+                    "--CGV-footer-height": [ "20px" ]
+                },
+                "No Footer": {
+                    "--CGV-footer-height": [ "0px" ]
+                }
+            }
+        },
+        "Backdrop color": {
+            "type": "color-picker",
+            "default": "dark",
+            "values": {
+                "Default": {
+                    "--CGV-backdrop-mid": [ "revert" ],
+					"--CGV-backdrop-dark": [ "revert" ],
+					"--CGV-backdrop-end": [ "revert" ],
+					"--CGV-card-body": [ "revert" ],
+					"--CGV-card-header": [ "revert" ]
+				},
+                "dark": {
+                    "--CGV-backdrop-mid": [ "rgba(19, 26, 36, 1.00)" ],
+					"--CGV-backdrop-dark": [ "rgba(12, 14, 18, 0.90)" ],
+					"--CGV-backdrop-end": [ "rgba(10, 22, 30, 0.60)" ],
+					"--CGV-card-body": [ "rgba(10, 14, 20, 0.30)" ],
+					"--CGV-card-header": [ "rgba(16, 22, 30, 0.45)" ]
+                }
+            }
+        }
+    },
+    "id": "a9776f60-2724-4ff0-824b-e1f82a04688e"
+}
