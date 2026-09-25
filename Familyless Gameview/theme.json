@@ -1,0 +1,15 @@
+{
+  "name": "Familyless Gameview",
+  "author": "Leozito",
+  "version": "v1.0",
+  "manifest_version": 9,
+  "flags": [
+    "REQUIRE_NAV_PATCH"
+  ],
+  "inject": {
+    "shared.css": [
+      "bigpicture"
+    ]
+  },
+  "id": "104cc1e0-8def-47ef-8c99-efcdda22c820"
+}

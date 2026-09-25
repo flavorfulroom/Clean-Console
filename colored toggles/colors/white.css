@@ -1,0 +1,8 @@
+:root {
+	--colored-toggles-main-color: white !important;
+    --colored-toggles-friends-text-color: #333 !important;
+}
+
+.gamepaddialog_ToggleSwitch_3__OD,.gamepadslider_SliderHandle_2yVKj {
+    background-color: var(--colored-toggles-friends-text-color);
+}

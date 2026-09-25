@@ -1,0 +1,64 @@
+:root {
+
+    --csp-gn-bg: white;
+    --csp-gn-in: white;
+
+    --csp-ls-mk: white;
+    --csp-ls-hl: white;
+    --csp-ls-sl: white;
+
+    --csp-rs-hl: white;
+
+}
+
+/* General */
+
+/* Background */
+._33vqr13-jdnjTkKKTh414f {
+    background: var(--csp-gn-bg);
+}
+
+/* Left-side */
+
+/* Interface */
+._1d6VIquCc410kNE7rDAje6 {
+    background: var(--csp-gn-in);
+}
+
+/* Marker */
+._2mL2HfT5AkDXRi1YBnRWKa:focus {
+    border-left: 2px solid var(--csp-ls-mk);
+}
+
+._2mL2HfT5AkDXRi1YBnRWKa._1ELdDY5kb5jxjXe-FpWBo5 {
+    border-left: 2px solid var(--csp-ls-mk);
+}
+
+/* Highlight */
+._2mL2HfT5AkDXRi1YBnRWKa:focus {
+    background: linear-gradient(90deg, var(--csp-ls-hl), rgba(0, 0, 0, 0)) !important;
+}
+
+/* Selected */
+._2mL2HfT5AkDXRi1YBnRWKa._1ELdDY5kb5jxjXe-FpWBo5 {
+    background: linear-gradient(90deg, var(--csp-ls-sl), rgba(0, 0, 0, 0));
+}
+
+/* Right-side */
+
+/* Background */
+.ZjHHXZlnZhCahNrBFplWc {
+    background: transparent;
+}
+
+/* Interface */
+.eKmEXJCm_lgme24Fp_HWt._2CCdODv0vfzOMrEBUzZwfI {
+    background: var(--csp-gn-in);
+}
+
+/* Highlight */
+.eKmEXJCm_lgme24Fp_HWt:not(._2QgNsvFPYTZ5yRiTm7mUyu)._2HFrmMgB38Ike5w4rVxzEX.gpfocus,
+.eKmEXJCm_lgme24Fp_HWt:not(._2QgNsvFPYTZ5yRiTm7mUyu)._2HFrmMgB38Ike5w4rVxzEX.gpfocuswithin {
+    background: var(--csp-rs-hl);
+    animation: none;
+}

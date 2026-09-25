@@ -1,0 +1,130 @@
+:root {
+	--colored-toggles-main-color: orange;
+	--colored-toggles-static-color: var(--colored-toggles-main-color);
+	--colored-toggles-friends-text-color: black;
+	--colored-toggles-animation: none;
+	--gpColor-Blue: var(--colored-toggles-main-color) !important;
+}
+
+/* Toggle that is on */
+.gamepaddialog_ToggleRail_2JtC3::before {
+	background: var(--colored-toggles-main-color);
+	animation: var(--colored-toggles-animation);
+}
+
+.gamepadslider_SliderTrack_Mq25N::before {
+    background: var(--colored-toggles-main-color);
+	animation: var(--colored-toggles-animation);
+}
+
+/* Enabled tick of a slider with ticks below */
+div .gamepadslider_SliderNotchTick_Fv1Ht.gamepadslider_TickActive_1gnUV {
+	background: var(--colored-toggles-main-color);
+	animation: var(--colored-toggles-animation);
+} 
+
+/* Friends badge on the home screen */
+.appdetailsfriendssection_FriendsPlayingNowBadge_38sNQ.appdetailsfriendssection_InFriendsTab_15Vpl {
+	background: var(--colored-toggles-main-color);
+	color: var(--colored-toggles-friends-text-color);
+	animation: var(--colored-toggles-animation);
+}
+
+/* Current page mark in the steam button side menu */
+div .mainmenu_Item_2w9Tp .mainmenu_ActiveDot_1uLVH,
+.mainmenuapprunning_NavigationMenuItem_1G0K4 .mainmenuapprunning_ActiveDot_13YbV {
+	background: var(--colored-toggles-main-color);
+	animation: var(--colored-toggles-animation);
+}
+
+/* Play button on a game */
+.BasicUI .appactionbutton_Green_3cI5T .appactionbutton_ButtonChild_2AzIX.Focusable:focus {
+	background: var(--colored-toggles-main-color);
+	animation: var(--colored-toggles-animation);
+}
+
+/* Play icon on a play button on a game */
+.BasicUI .appactionbutton_Green_3cI5T .appactionbutton_ButtonChild_2AzIX.Focusable:focus > svg {
+	color: var(--colored-toggles-friends-text-color);
+}
+
+/* Text on a play button on a game */
+.appactionbutton_PlayButton_3ydig.gpfocus > .appactionbutton_ButtonText_33cnX {
+	color: var(--colored-toggles-friends-text-color);
+}
+
+/* Download button on a game */
+.BasicUI .appactionbutton_ButtonChild_2AzIX.Focusable:focus {
+	background: var(--colored-toggles-main-color);
+	animation: var(--colored-toggles-animation);
+}
+
+/* Download icon on the download button of a game */
+.BasicUI .appactionbutton_ButtonChild_2AzIX.Focusable:focus > svg {
+	color: var(--colored-toggles-friends-text-color);
+}
+
+/* Text on the download button of a game */
+.BasicUI .appactionbutton_ButtonChild_2AzIX.Focusable:focus .appactionbutton_ButtonText_33cnX {
+	color: var(--colored-toggles-friends-text-color);
+}
+
+/* New to library text. */
+.appportrait_AppPortraitBanner_N8aJr {
+	background: var(--colored-toggles-main-color); 
+	color: var(--colored-toggles-friends-text-color);
+	animation: var(--colored-toggles-animation);
+  }
+
+/* Progress bar at the bottom of installing games in the home menu. */
+.appportrait_UninstalledBar_kX-tI .appportrait_UninstalledProgressBar_mA39H {
+	background: var(--colored-toggles-main-color);
+	animation: var(--colored-toggles-animation);
+}
+
+/* Download bar in the top header. */
+.header_HeaderDownloadContainer_2ssr3 .header_HeaderAppPortraitContainer_1PbL3 .header_HeaderDownloadProgressBarBackground_vo3Tt .header_HeaderDownloadProgressBar_AK_Ax {
+	background: var(--colored-toggles-main-color);
+	animation: var(--colored-toggles-animation);
+}
+
+/* Download bar underneath the download button. */
+div .BasicUI .appdetailsplaysection_DetailsProgressContainer_25YVD .appdetailsplaysection_DetailsProgressBar_1FnTq {
+	background: var(--colored-toggles-main-color);
+	animation: var(--colored-toggles-animation);
+}
+
+/* Continue download button on downloads screen. */
+div .downloads_SectionItemWrapper_21P7c.gpfocus .downloads_SectionItem_1VNuY.downloads_Active_IbePL .downloads_Button_3oavR.DialogButton:enabled {
+	background: var(--colored-toggles-main-color);
+	animation: var(--colored-toggles-animation);
+}
+
+/* Download text above download bar. Animations and gradients seemingly unsupported */
+div .downloads_SectionItemStatus_1Sygg .downloads_Downloading_33BlY .downloads_State_2ns4w {
+	color: var(--colored-toggles-static-color);
+}
+
+.downloads_Button_3oavR {
+	background: var(--colored-toggles-main-color);
+	animation: var(--colored-toggles-animation);
+}
+
+.progressbar_Percent_2_0Jo {
+	animation: var(--colored-toggles-animation);
+}
+
+/* Play/Install buttons in game context menu */
+.gamepadcontextmenu_contextMenuItem_1sdvo.gamepadcontextmenu_Focused_X813r.gamepadcontextmenu_Positive_2gJWj, .gamepadcontextmenu_contextMenuItem_1sdvo.gamepadcontextmenu_Focused_X813r.Stream, .gamepadcontextmenu_contextMenuItem_1sdvo.gamepadcontextmenu_Focused_X813r.Connect, .gamepadcontextmenu_contextMenuItem_1sdvo.gamepadcontextmenu_Focused_X813r.Launch, .gamepadcontextmenu_contextMenuItem_1sdvo.gamepadcontextmenu_Focused_X813r.PlayMusic, .gamepadcontextmenu_contextMenuItem_1sdvo.gamepadcontextmenu_Focused_X813r.Play, .gamepadcontextmenu_contextMenuItem_1sdvo.gamepadcontextmenu_Focused_X813r.Resume, .gamepadcontextmenu_contextMenuItem_1sdvo.gamepadcontextmenu_Focused_X813r.BorrowApp,
+.gamepadcontextmenu_contextMenuItem_1sdvo.gamepadcontextmenu_Focused_X813r.gamepadcontextmenu_Emphasis_1viOG, .gamepadcontextmenu_contextMenuItem_1sdvo.gamepadcontextmenu_Focused_X813r.Download, .gamepadcontextmenu_contextMenuItem_1sdvo.gamepadcontextmenu_Focused_X813r.Update, .gamepadcontextmenu_contextMenuItem_1sdvo.gamepadcontextmenu_Focused_X813r.PreLoad, .gamepadcontextmenu_contextMenuItem_1sdvo.gamepadcontextmenu_Focused_X813r.Install, .gamepadcontextmenu_contextMenuItem_1sdvo.gamepadcontextmenu_Focused_X813r.Pause,
+button.gamepaddialog_Button_1kn70.DialogButton.gpfocus.Primary, button.gamepaddialog_Button_1kn70.DialogButton:active.Primary, button.gamepaddialog_Button_1kn70.DialogButton:enabled.gpfocus.Primary, button.gamepaddialog_Button_1kn70.DialogButton:enabled:active.Primary, button.gamepaddialog_Button_1kn70.DialogButton:active.gpfocus.Primary, button.gamepaddialog_Button_1kn70.DialogButton:active:active.Primary, button.gamepaddialog_Button_1kn70.DialogButton:hover.gpfocus.Primary, button.gamepaddialog_Button_1kn70.DialogButton:hover:active.Primary, button.gamepaddialog_Button_1kn70.DialogButton:enabled:active:hover.gpfocus.Primary, button.gamepaddialog_Button_1kn70.DialogButton:enabled:active:hover:active.Primary {
+	background: var(--colored-toggles-main-color);
+	animation: var(--colored-toggles-animation);
+	color: var(--colored-toggles-friends-text-color);
+}
+
+/* Achievement progress bar */
+.BasicUI .appdetailsachievementssection_AchievementProgressContainer_3ns91 .appdetailsachievementssection_AchievementProgress_3Rm36 {
+	background: var(--colored-toggles-main-color);
+	animation: var(--colored-toggles-animation);
+}

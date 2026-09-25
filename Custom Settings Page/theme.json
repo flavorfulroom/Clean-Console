@@ -1,0 +1,185 @@
+{
+    "name": "Custom Settings Page",
+    "author": "Leozito",
+    "version": "v1.0",
+    "description": "Edit color scheme from Settings Page.",
+    "target": "Settings",
+    "manifest_version": 9,
+    "tabs": {
+        "default": [ "bigpicture" ]
+    },
+    "inject": {
+        "shared.css": []
+    },
+    "patches": {
+        "Background": {
+            "type": "dropdown",
+            "default": "Custom Gradient",
+            "values": {
+                "Dark": {
+                    "--csp-gn-bg": [ "#1A1A1A" ]
+                },
+                "Light": {
+                    "--csp-gn-bg": [ "#E6E6E6" ]
+                },
+                "Custom": {},
+                "Custom Gradient": {
+                    "--csp-gn-bg": [ "linear-gradient(135deg, var(--csp-gn-bg-color-a), var(--csp-gn-bg-color-b))" ]
+                }
+            },
+            "components": [
+                {
+                    "name": "General BG",
+                    "type": "color-picker",
+                    "on": "Custom",
+                    "default": "#FF8000",
+                    "css_variable": "--csp-gn-bg",
+                    "tabs": []
+                },
+                {
+                    "name": "General BG Grad A",
+                    "type": "color-picker",
+                    "on": "Custom Gradient",
+                    "default": "#bd5ece",
+                    "css_variable": "--csp-gn-bg-color-a",
+                    "tabs": []
+                },
+                {
+                    "name": "General BG Grad B",
+                    "type": "color-picker",
+                    "on": "Custom Gradient",
+                    "default": "#2ab1ac",
+                    "css_variable": "--csp-gn-bg-color-b",
+                    "tabs": []
+                }
+            ]
+        },
+        "Interface": {
+            "type": "dropdown",
+            "default": "Dark",
+            "values": {
+                "Dark": {
+                    "--csp-gn-in": [ "#00000033" ]
+                },
+                "Light": {
+                    "--csp-gn-in": [ "#FFFFFF33" ]
+                },
+                "Custom": {},
+                "Custom Gradient": {
+                    "--csp-gn-in": [ "linear-gradient(135deg, var(--csp-gn-in-color-a), var(--csp-gn-in-color-b))" ]
+                }
+            },
+            "components": [
+                {
+                    "name": "Interface BG",
+                    "type": "color-picker",
+                    "on": "Custom",
+                    "default": "#FF8000",
+                    "css_variable": "--csp-gn-in",
+                    "tabs": []
+                },
+                {
+                    "name": "Interface BG Grad A",
+                    "type": "color-picker",
+                    "on": "Custom Gradient",
+                    "default": "#bd5ece",
+                    "css_variable": "--csp-gn-in-color-a",
+                    "tabs": []
+                },
+                {
+                    "name": "Interface BG Grad B",
+                    "type": "color-picker",
+                    "on": "Custom Gradient",
+                    "default": "#2ab1ac",
+                    "css_variable": "--csp-gn-in-color-b",
+                    "tabs": []
+                }
+            ]
+        },
+        "Menu Highlight": {
+            "type": "dropdown",
+            "default": "Light",
+            "values": {
+                "Dark": {
+                    "--csp-ls-mk": [ "#000000" ],
+                    "--csp-ls-hl": [ "#00000066" ],
+                    "--csp-ls-sl": [ "#00000033" ]
+                },
+                "Light": {
+                    "--csp-ls-mk": [ "#FFFFFF" ],
+                    "--csp-ls-hl": [ "#FFFFFF66" ],
+                    "--csp-ls-sl": [ "#FFFFFF33" ]
+                },
+                "Custom": {}
+            },
+            "components": [
+                {
+                    "name": "Marker Color",
+                    "type": "color-picker",
+                    "on": "Custom",
+                    "default": "#FF8000",
+                    "css_variable": "--csp-ls-mk",
+                    "tabs": []
+                },
+                {
+                    "name": "Hover BG",
+                    "type": "color-picker",
+                    "on": "Custom",
+                    "default": "#bd5ece",
+                    "css_variable": "--csp-ls-hl",
+                    "tabs": []
+                },
+                {
+                    "name": "Selected BG",
+                    "type": "color-picker",
+                    "on": "Custom",
+                    "default": "#2ab1ac",
+                    "css_variable": "--csp-ls-sl",
+                    "tabs": []
+                }
+            ]
+        },
+        "Page Highlight":{
+            "type": "dropdown",
+            "default": "Light",
+            "values": {
+                "Dark": {
+                    "--csp-rs-hl": [ "#00000066" ]
+                },
+                "Light": {
+                    "--csp-rs-hl": [ "#FFFFFF66" ]
+                },
+                "Custom": {},
+                "Custom Gradient": {
+                    "--csp-rs-hl": [ "linear-gradient(135deg, var(--csp-rs-hl-color-a), var(--csp-rs-hl-color-b))" ]
+                }
+            },
+            "components": [
+                {
+                    "name": "Hover BG",
+                    "type": "color-picker",
+                    "on": "Custom",
+                    "default": "#FF8000",
+                    "css_variable": "--csp-rs-hl",
+                    "tabs": []
+                },
+                {
+                    "name": "Hover BG Grad A",
+                    "type": "color-picker",
+                    "on": "Custom Gradient",
+                    "default": "#bd5ece",
+                    "css_variable": "--csp-rs-hl-color-a",
+                    "tabs": []
+                },
+                {
+                    "name": "Hover BG Grad B",
+                    "type": "color-picker",
+                    "on": "Custom Gradient",
+                    "default": "#2ab1ac",
+                    "css_variable": "--csp-rs-hl-color-b",
+                    "tabs": []
+                }
+            ]
+        }
+    }
+}
