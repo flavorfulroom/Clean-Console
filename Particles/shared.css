@@ -1,0 +1,292 @@
+:root {
+    --zaza-recent-waves-opacity: 0.18;
+    --zaza-recent-waves-color: #ffffff;
+    --zaza-recent-waves-blur: 58px;
+    --zaza-particle-blur: 0px;
+    --zaza-recent-waves-noise-bg: radial-gradient(circle, rgb(255 255 255 / 58%) 0 0.11px, transparent 0.22px), radial-gradient(circle, rgb(0 0 0 / 32%) 0 0.09px, transparent 0.2px);
+    --zaza-recent-waves-noise-opacity: 0.045;
+    --zaza-recent-waves-noise-size: 2.4px;
+    --zaza-recent-waves-speed: 24s;
+    --zaza-recent-waves-speed-soft: 34s;
+    --zaza-recent-waves-blend: screen;
+    --zaza-particle-sharp-size-a: 240px 170px;
+    --zaza-particle-sharp-size-b: 310px 210px;
+    --zaza-particle-sharp-size-c: 380px 260px;
+    --zaza-particle-sharp-size-d: 440px 245px;
+    --zaza-particle-soft-size-a: 300px 190px;
+    --zaza-particle-soft-size-b: 390px 245px;
+    --zaza-particle-soft-size-c: 470px 295px;
+    --zaza-particle-drift-a: 240px -170px;
+    --zaza-particle-drift-b: -310px 210px;
+    --zaza-particle-drift-c: 380px 260px;
+    --zaza-particle-drift-d: -440px -245px;
+    --zaza-particle-drift-e: 300px 190px;
+    --zaza-particle-drift-f: -390px -245px;
+    --zaza-particle-drift-g: 470px -295px;
+}
+
+.gamepadhome_RecentSection_39tNv {
+    position: relative;
+    isolation: isolate;
+}
+
+.gamepadhome_RecentSection_39tNv::before,
+.gamepadhome_RecentSection_39tNv::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    pointer-events: none;
+    border-radius: 0;
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        rgb(0 0 0 / 0%) 0%,
+        rgb(0 0 0 / 55%) 7%,
+        rgb(0 0 0 / 100%) 18%,
+        rgb(0 0 0 / 100%) 43%,
+        rgb(0 0 0 / 42%) 54%,
+        rgb(0 0 0 / 0%) 63%,
+        rgb(0 0 0 / 0%) 100%
+    );
+    mask-image: linear-gradient(
+        to bottom,
+        rgb(0 0 0 / 0%) 0%,
+        rgb(0 0 0 / 55%) 7%,
+        rgb(0 0 0 / 100%) 18%,
+        rgb(0 0 0 / 100%) 43%,
+        rgb(0 0 0 / 42%) 54%,
+        rgb(0 0 0 / 0%) 63%,
+        rgb(0 0 0 / 0%) 100%
+    );
+}
+
+.gamepadhome_RecentSection_39tNv::before {
+    opacity: var(--zaza-recent-waves-opacity);
+    background-image:
+        radial-gradient(circle at 8% 24%, color-mix(in srgb, var(--zaza-recent-waves-color) 72%, white) 0 0.52px, transparent 1.14px),
+        radial-gradient(circle at 44% 72%, color-mix(in srgb, var(--zaza-recent-waves-color) 64%, white) 0 0.72px, transparent 1.34px),
+        radial-gradient(circle at 78% 36%, color-mix(in srgb, var(--zaza-recent-waves-color) 78%, #78c7ff) 0 0.58px, transparent 1.22px),
+        radial-gradient(circle at 92% 82%, color-mix(in srgb, var(--zaza-recent-waves-color) 58%, white) 0 0.42px, transparent 0.96px),
+        radial-gradient(circle at 18% 62%, color-mix(in srgb, var(--zaza-recent-waves-color) 58%, #56bcf9) 0 1.4px, transparent 7.2px),
+        radial-gradient(circle at 58% 28%, color-mix(in srgb, var(--zaza-recent-waves-color) 52%, white) 0 1.1px, transparent 6px),
+        radial-gradient(circle at 84% 70%, color-mix(in srgb, var(--zaza-recent-waves-color) 48%, #7d71e8) 0 1.8px, transparent 8px);
+    background-size:
+        var(--zaza-particle-sharp-size-a),
+        var(--zaza-particle-sharp-size-b),
+        var(--zaza-particle-sharp-size-c),
+        var(--zaza-particle-sharp-size-d),
+        var(--zaza-particle-soft-size-a),
+        var(--zaza-particle-soft-size-b),
+        var(--zaza-particle-soft-size-c);
+    filter:
+        drop-shadow(0 0 5px color-mix(in srgb, var(--zaza-recent-waves-color) 65%, transparent))
+        drop-shadow(0 0 16px color-mix(in srgb, var(--zaza-recent-waves-color) 45%, transparent))
+        blur(var(--zaza-particle-blur));
+    mix-blend-mode: var(--zaza-recent-waves-blend);
+    animation-name: zaza-particles-fullscreen;
+    animation-duration: var(--zaza-recent-waves-speed);
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.gamepadhome_RecentSection_39tNv::after {
+    z-index: 3;
+    opacity: var(--zaza-recent-waves-noise-opacity);
+    background-image: var(--zaza-recent-waves-noise-bg);
+    background-position:
+        0 0,
+        calc(var(--zaza-recent-waves-noise-size) / 2) calc(var(--zaza-recent-waves-noise-size) / 2);
+    background-size:
+        var(--zaza-recent-waves-noise-size) var(--zaza-recent-waves-noise-size),
+        var(--zaza-recent-waves-noise-size) var(--zaza-recent-waves-noise-size);
+    mix-blend-mode: overlay;
+    animation-name: zaza-noise-loop;
+    animation-duration: var(--zaza-recent-waves-speed-soft);
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.gamepadhome_RecentSection_39tNv > * {
+    position: relative;
+    z-index: 9;
+}
+
+@keyframes zaza-particles-fullscreen {
+    0% {
+        background-position:
+            0 0,
+            0 0,
+            0 0,
+            0 0,
+            0 0,
+            0 0,
+            0 0;
+    }
+
+    100% {
+        background-position:
+            var(--zaza-particle-drift-a),
+            var(--zaza-particle-drift-b),
+            var(--zaza-particle-drift-c),
+            var(--zaza-particle-drift-d),
+            var(--zaza-particle-drift-e),
+            var(--zaza-particle-drift-f),
+            var(--zaza-particle-drift-g);
+    }
+}
+
+@keyframes zaza-noise-loop {
+    0% {
+        background-position:
+            0 0,
+            calc(var(--zaza-recent-waves-noise-size) / 2) calc(var(--zaza-recent-waves-noise-size) / 2);
+    }
+
+    100% {
+        background-position:
+            var(--zaza-recent-waves-noise-size) var(--zaza-recent-waves-noise-size),
+            0 var(--zaza-recent-waves-noise-size);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .gamepadhome_RecentSection_39tNv::before,
+    .gamepadhome_RecentSection_39tNv::after {
+        animation: none;
+    }
+}
+.gamepadhome_RecentSection_39tNv {
+    position: relative;
+    isolation: isolate;
+}
+
+.gamepadhome_RecentSection_39tNv::before,
+.gamepadhome_RecentSection_39tNv::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    pointer-events: none;
+    border-radius: 0;
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        rgb(0 0 0 / 0%) 0%,
+        rgb(0 0 0 / 55%) 7%,
+        rgb(0 0 0 / 100%) 18%,
+        rgb(0 0 0 / 100%) 43%,
+        rgb(0 0 0 / 42%) 54%,
+        rgb(0 0 0 / 0%) 63%,
+        rgb(0 0 0 / 0%) 100%
+    );
+    mask-image: linear-gradient(
+        to bottom,
+        rgb(0 0 0 / 0%) 0%,
+        rgb(0 0 0 / 55%) 7%,
+        rgb(0 0 0 / 100%) 18%,
+        rgb(0 0 0 / 100%) 43%,
+        rgb(0 0 0 / 42%) 54%,
+        rgb(0 0 0 / 0%) 63%,
+        rgb(0 0 0 / 0%) 100%
+    );
+}
+
+.gamepadhome_RecentSection_39tNv::before {
+    opacity: var(--zaza-recent-waves-opacity);
+    background-image:
+        radial-gradient(circle at 8% 24%, color-mix(in srgb, var(--zaza-recent-waves-color) 72%, white) 0 0.52px, transparent 1.14px),
+        radial-gradient(circle at 44% 72%, color-mix(in srgb, var(--zaza-recent-waves-color) 64%, white) 0 0.72px, transparent 1.34px),
+        radial-gradient(circle at 78% 36%, color-mix(in srgb, var(--zaza-recent-waves-color) 78%, #78c7ff) 0 0.58px, transparent 1.22px),
+        radial-gradient(circle at 92% 82%, color-mix(in srgb, var(--zaza-recent-waves-color) 58%, white) 0 0.42px, transparent 0.96px),
+        radial-gradient(circle at 18% 62%, color-mix(in srgb, var(--zaza-recent-waves-color) 58%, #56bcf9) 0 1.4px, transparent 7.2px),
+        radial-gradient(circle at 58% 28%, color-mix(in srgb, var(--zaza-recent-waves-color) 52%, white) 0 1.1px, transparent 6px),
+        radial-gradient(circle at 84% 70%, color-mix(in srgb, var(--zaza-recent-waves-color) 48%, #7d71e8) 0 1.8px, transparent 8px);
+    background-size:
+        var(--zaza-particle-sharp-size-a),
+        var(--zaza-particle-sharp-size-b),
+        var(--zaza-particle-sharp-size-c),
+        var(--zaza-particle-sharp-size-d),
+        var(--zaza-particle-soft-size-a),
+        var(--zaza-particle-soft-size-b),
+        var(--zaza-particle-soft-size-c);
+    filter:
+        drop-shadow(0 0 5px color-mix(in srgb, var(--zaza-recent-waves-color) 65%, transparent))
+        drop-shadow(0 0 16px color-mix(in srgb, var(--zaza-recent-waves-color) 45%, transparent))
+        blur(var(--zaza-particle-blur));
+    mix-blend-mode: var(--zaza-recent-waves-blend);
+    animation-name: zaza-particles-fullscreen;
+    animation-duration: var(--zaza-recent-waves-speed);
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.gamepadhome_RecentSection_39tNv::after {
+    z-index: 3;
+    opacity: var(--zaza-recent-waves-noise-opacity);
+    background-image: var(--zaza-recent-waves-noise-bg);
+    background-position:
+        0 0,
+        calc(var(--zaza-recent-waves-noise-size) / 2) calc(var(--zaza-recent-waves-noise-size) / 2);
+    background-size:
+        var(--zaza-recent-waves-noise-size) var(--zaza-recent-waves-noise-size),
+        var(--zaza-recent-waves-noise-size) var(--zaza-recent-waves-noise-size);
+    mix-blend-mode: overlay;
+    animation-name: zaza-noise-loop;
+    animation-duration: var(--zaza-recent-waves-speed-soft);
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.gamepadhome_RecentSection_39tNv > * {
+    position: relative;
+    z-index: 9;
+}
+
+@keyframes zaza-particles-fullscreen {
+    0% {
+        background-position:
+            0 0,
+            0 0,
+            0 0,
+            0 0,
+            0 0,
+            0 0,
+            0 0;
+    }
+
+    100% {
+        background-position:
+            var(--zaza-particle-drift-a),
+            var(--zaza-particle-drift-b),
+            var(--zaza-particle-drift-c),
+            var(--zaza-particle-drift-d),
+            var(--zaza-particle-drift-e),
+            var(--zaza-particle-drift-f),
+            var(--zaza-particle-drift-g);
+    }
+}
+
+@keyframes zaza-noise-loop {
+    0% {
+        background-position:
+            0 0,
+            calc(var(--zaza-recent-waves-noise-size) / 2) calc(var(--zaza-recent-waves-noise-size) / 2);
+    }
+
+    100% {
+        background-position:
+            var(--zaza-recent-waves-noise-size) var(--zaza-recent-waves-noise-size),
+            0 var(--zaza-recent-waves-noise-size);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .gamepadhome_RecentSection_39tNv::before,
+    .gamepadhome_RecentSection_39tNv::after {
+        animation: none;
+    }
+}
+

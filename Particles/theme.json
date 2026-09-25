@@ -1,0 +1,998 @@
+{
+  "name": "Particles",
+  "author": "ZazaMastro",
+  "version": "v1.7.0",
+  "manifest_version": 6,
+  "inject": {
+    "shared.css": [
+      "SP",
+      "MainMenu"
+    ]
+  },
+  "patches": {
+    "Particle Count": {
+      "type": "slider",
+      "default": "75",
+      "values": {
+        "10": {
+          "--zaza-particle-sharp-size-a": [
+            "560px 360px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-sharp-size-b": [
+            "690px 420px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-sharp-size-c": [
+            "760px 520px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-sharp-size-d": [
+            "840px 500px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-soft-size-a": [
+            "620px 380px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-soft-size-b": [
+            "760px 460px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-soft-size-c": [
+            "900px 560px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-a": [
+            "560px -360px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-b": [
+            "-690px 420px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-c": [
+            "760px 520px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-d": [
+            "-840px -500px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-e": [
+            "620px 380px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-f": [
+            "-760px -460px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-g": [
+            "900px -560px",
+            "SP",
+            "MainMenu"
+          ]
+        },
+        "25": {
+          "--zaza-particle-sharp-size-a": [
+            "410px 270px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-sharp-size-b": [
+            "520px 330px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-sharp-size-c": [
+            "610px 420px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-sharp-size-d": [
+            "700px 390px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-soft-size-a": [
+            "490px 300px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-soft-size-b": [
+            "620px 380px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-soft-size-c": [
+            "740px 460px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-a": [
+            "410px -270px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-b": [
+            "-520px 330px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-c": [
+            "610px 420px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-d": [
+            "-700px -390px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-e": [
+            "490px 300px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-f": [
+            "-620px -380px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-g": [
+            "740px -460px",
+            "SP",
+            "MainMenu"
+          ]
+        },
+        "50": {
+          "--zaza-particle-sharp-size-a": [
+            "300px 210px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-sharp-size-b": [
+            "380px 250px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-sharp-size-c": [
+            "470px 320px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-sharp-size-d": [
+            "540px 300px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-soft-size-a": [
+            "360px 230px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-soft-size-b": [
+            "470px 290px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-soft-size-c": [
+            "560px 350px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-a": [
+            "300px -210px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-b": [
+            "-380px 250px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-c": [
+            "470px 320px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-d": [
+            "-540px -300px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-e": [
+            "360px 230px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-f": [
+            "-470px -290px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-g": [
+            "560px -350px",
+            "SP",
+            "MainMenu"
+          ]
+        },
+        "75": {
+          "--zaza-particle-sharp-size-a": [
+            "240px 170px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-sharp-size-b": [
+            "310px 210px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-sharp-size-c": [
+            "380px 260px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-sharp-size-d": [
+            "440px 245px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-soft-size-a": [
+            "300px 190px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-soft-size-b": [
+            "390px 245px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-soft-size-c": [
+            "470px 295px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-a": [
+            "240px -170px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-b": [
+            "-310px 210px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-c": [
+            "380px 260px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-d": [
+            "-440px -245px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-e": [
+            "300px 190px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-f": [
+            "-390px -245px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-g": [
+            "470px -295px",
+            "SP",
+            "MainMenu"
+          ]
+        },
+        "100": {
+          "--zaza-particle-sharp-size-a": [
+            "205px 148px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-sharp-size-b": [
+            "260px 182px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-sharp-size-c": [
+            "320px 225px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-sharp-size-d": [
+            "380px 215px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-soft-size-a": [
+            "250px 165px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-soft-size-b": [
+            "330px 210px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-soft-size-c": [
+            "400px 255px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-a": [
+            "205px -148px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-b": [
+            "-260px 182px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-c": [
+            "320px 225px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-d": [
+            "-380px -215px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-e": [
+            "250px 165px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-f": [
+            "-330px -210px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-g": [
+            "400px -255px",
+            "SP",
+            "MainMenu"
+          ]
+        },
+        "125": {
+          "--zaza-particle-sharp-size-a": [
+            "178px 128px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-sharp-size-b": [
+            "230px 160px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-sharp-size-c": [
+            "285px 200px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-sharp-size-d": [
+            "340px 190px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-soft-size-a": [
+            "220px 145px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-soft-size-b": [
+            "295px 186px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-soft-size-c": [
+            "360px 230px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-a": [
+            "178px -128px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-b": [
+            "-230px 160px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-c": [
+            "285px 200px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-d": [
+            "-340px -190px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-e": [
+            "220px 145px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-f": [
+            "-295px -186px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-g": [
+            "360px -230px",
+            "SP",
+            "MainMenu"
+          ]
+        },
+        "150": {
+          "--zaza-particle-sharp-size-a": [
+            "156px 112px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-sharp-size-b": [
+            "205px 144px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-sharp-size-c": [
+            "255px 178px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-sharp-size-d": [
+            "306px 172px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-soft-size-a": [
+            "198px 132px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-soft-size-b": [
+            "265px 168px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-soft-size-c": [
+            "326px 208px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-a": [
+            "156px -112px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-b": [
+            "-205px 144px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-c": [
+            "255px 178px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-d": [
+            "-306px -172px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-e": [
+            "198px 132px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-f": [
+            "-265px -168px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-drift-g": [
+            "326px -208px",
+            "SP",
+            "MainMenu"
+          ]
+        }
+      },
+      "components": []
+    },
+    "Wave Color": {
+      "type": "none",
+      "values": {
+        "_": {}
+      },
+      "components": [
+        {
+          "name": "Color",
+          "type": "color-picker",
+          "on": "_",
+          "default": "#FFFFFF",
+          "css_variable": "zaza-recent-waves-color",
+          "tabs": [
+            "SP",
+            "MainMenu"
+          ]
+        }
+      ]
+    },
+    "Opacity": {
+      "type": "slider",
+      "default": "4",
+      "values": {
+        "1": {
+          "--zaza-recent-waves-opacity": [
+            "0.06",
+            "SP",
+            "MainMenu"
+          ]
+        },
+        "2": {
+          "--zaza-recent-waves-opacity": [
+            "0.10",
+            "SP",
+            "MainMenu"
+          ]
+        },
+        "3": {
+          "--zaza-recent-waves-opacity": [
+            "0.14",
+            "SP",
+            "MainMenu"
+          ]
+        },
+        "4": {
+          "--zaza-recent-waves-opacity": [
+            "0.18",
+            "SP",
+            "MainMenu"
+          ]
+        },
+        "5": {
+          "--zaza-recent-waves-opacity": [
+            "0.22",
+            "SP",
+            "MainMenu"
+          ]
+        },
+        "6": {
+          "--zaza-recent-waves-opacity": [
+            "0.26",
+            "SP",
+            "MainMenu"
+          ]
+        },
+        "7": {
+          "--zaza-recent-waves-opacity": [
+            "0.32",
+            "SP",
+            "MainMenu"
+          ]
+        }
+      },
+      "components": []
+    },
+    "Speed": {
+      "type": "slider",
+      "default": "4",
+      "values": {
+        "1": {
+          "--zaza-recent-waves-speed": [
+            "120s",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-recent-waves-speed-soft": [
+            "160s",
+            "SP",
+            "MainMenu"
+          ]
+        },
+        "2": {
+          "--zaza-recent-waves-speed": [
+            "72s",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-recent-waves-speed-soft": [
+            "96s",
+            "SP",
+            "MainMenu"
+          ]
+        },
+        "3": {
+          "--zaza-recent-waves-speed": [
+            "40s",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-recent-waves-speed-soft": [
+            "56s",
+            "SP",
+            "MainMenu"
+          ]
+        },
+        "4": {
+          "--zaza-recent-waves-speed": [
+            "24s",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-recent-waves-speed-soft": [
+            "34s",
+            "SP",
+            "MainMenu"
+          ]
+        },
+        "5": {
+          "--zaza-recent-waves-speed": [
+            "14s",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-recent-waves-speed-soft": [
+            "22s",
+            "SP",
+            "MainMenu"
+          ]
+        },
+        "6": {
+          "--zaza-recent-waves-speed": [
+            "8s",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-recent-waves-speed-soft": [
+            "12s",
+            "SP",
+            "MainMenu"
+          ]
+        },
+        "7": {
+          "--zaza-recent-waves-speed": [
+            "4s",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-recent-waves-speed-soft": [
+            "7s",
+            "SP",
+            "MainMenu"
+          ]
+        }
+      },
+      "components": []
+    },
+    "Blur %": {
+      "type": "slider",
+      "default": "100",
+      "values": {
+        "0": {
+          "--zaza-recent-waves-blur": [
+            "0px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-recent-waves-blur-soft": [
+            "0px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-blur": [
+            "0px",
+            "SP",
+            "MainMenu"
+          ]
+        },
+        "25": {
+          "--zaza-recent-waves-blur": [
+            "15px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-recent-waves-blur-soft": [
+            "20px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-blur": [
+            "0.4px",
+            "SP",
+            "MainMenu"
+          ]
+        },
+        "50": {
+          "--zaza-recent-waves-blur": [
+            "29px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-recent-waves-blur-soft": [
+            "38px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-blur": [
+            "0.8px",
+            "SP",
+            "MainMenu"
+          ]
+        },
+        "75": {
+          "--zaza-recent-waves-blur": [
+            "44px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-recent-waves-blur-soft": [
+            "57px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-blur": [
+            "1.2px",
+            "SP",
+            "MainMenu"
+          ]
+        },
+        "100": {
+          "--zaza-recent-waves-blur": [
+            "58px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-recent-waves-blur-soft": [
+            "76px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-blur": [
+            "1.6px",
+            "SP",
+            "MainMenu"
+          ]
+        },
+        "150": {
+          "--zaza-recent-waves-blur": [
+            "84px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-recent-waves-blur-soft": [
+            "108px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-blur": [
+            "2.4px",
+            "SP",
+            "MainMenu"
+          ]
+        },
+        "200": {
+          "--zaza-recent-waves-blur": [
+            "112px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-recent-waves-blur-soft": [
+            "144px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-blur": [
+            "3.2px",
+            "SP",
+            "MainMenu"
+          ]
+        },
+        "250": {
+          "--zaza-recent-waves-blur": [
+            "145px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-recent-waves-blur-soft": [
+            "188px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-blur": [
+            "4px",
+            "SP",
+            "MainMenu"
+          ]
+        },
+        "300": {
+          "--zaza-recent-waves-blur": [
+            "174px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-recent-waves-blur-soft": [
+            "228px",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-particle-blur": [
+            "5px",
+            "SP",
+            "MainMenu"
+          ]
+        }
+      },
+      "components": []
+    },
+    "Noise": {
+      "type": "slider",
+      "default": "2",
+      "values": {
+        "0": {
+          "--zaza-recent-waves-noise-opacity": [
+            "0",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-recent-waves-noise-size": [
+            "2.8px",
+            "SP",
+            "MainMenu"
+          ]
+        },
+        "1": {
+          "--zaza-recent-waves-noise-opacity": [
+            "0.025",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-recent-waves-noise-size": [
+            "2.8px",
+            "SP",
+            "MainMenu"
+          ]
+        },
+        "2": {
+          "--zaza-recent-waves-noise-opacity": [
+            "0.045",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-recent-waves-noise-size": [
+            "2.4px",
+            "SP",
+            "MainMenu"
+          ]
+        },
+        "3": {
+          "--zaza-recent-waves-noise-opacity": [
+            "0.07",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-recent-waves-noise-size": [
+            "2px",
+            "SP",
+            "MainMenu"
+          ]
+        },
+        "4": {
+          "--zaza-recent-waves-noise-opacity": [
+            "0.10",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-recent-waves-noise-size": [
+            "1.6px",
+            "SP",
+            "MainMenu"
+          ]
+        },
+        "5": {
+          "--zaza-recent-waves-noise-opacity": [
+            "0.14",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-recent-waves-noise-size": [
+            "1.2px",
+            "SP",
+            "MainMenu"
+          ]
+        }
+      },
+      "components": []
+    },
+    "Blend Mode": {
+      "type": "dropdown",
+      "default": "Screen",
+      "values": {
+        "Overlay": {
+          "--zaza-recent-waves-blend": [
+            "overlay",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-recent-waves-blend-soft": [
+            "soft-light",
+            "SP",
+            "MainMenu"
+          ]
+        },
+        "Soft Light": {
+          "--zaza-recent-waves-blend": [
+            "soft-light",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-recent-waves-blend-soft": [
+            "soft-light",
+            "SP",
+            "MainMenu"
+          ]
+        },
+        "Screen": {
+          "--zaza-recent-waves-blend": [
+            "screen",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-recent-waves-blend-soft": [
+            "screen",
+            "SP",
+            "MainMenu"
+          ]
+        },
+        "Normal": {
+          "--zaza-recent-waves-blend": [
+            "normal",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-recent-waves-blend-soft": [
+            "normal",
+            "SP",
+            "MainMenu"
+          ]
+        },
+        "Glow Pickup": {
+          "--zaza-recent-waves-blend": [
+            "soft-light",
+            "SP",
+            "MainMenu"
+          ],
+          "--zaza-recent-waves-blend-soft": [
+            "screen",
+            "SP",
+            "MainMenu"
+          ]
+        }
+      },
+      "components": []
+    }
+  },
+  "id": "52de8ba4-7afa-4a27-b8a6-c38b94c5bd8f"
+}
