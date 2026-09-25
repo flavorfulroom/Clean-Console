@@ -133,4 +133,4 @@ Full credit for the original themes featured in the custom patches goes to the a
 
 Disclaimer: this is heavily based on Leozito's Machine ready theme. if he or anyone else who's work I've used has any issues i am happy to address them
 
-** I am Using Windows Decky Plugins under the Playhub suite to go along with this theme so NO OFFICIAL SUPPORT AT ALL WHATSOEVER is provided for Decky Loader on windows and ALL SUPPORT REQUESTS FOR WINDOWS ASKED IN THE DECKY LOADER DISCORD OR GITHUB WILL BE IGNORED.**
+**I am Using Windows Decky Plugins under the Playhub suite to go along with this theme so NO OFFICIAL SUPPORT AT ALL WHATSOEVER is provided for Decky Loader on windows and ALL SUPPORT REQUESTS FOR WINDOWS ASKED IN THE DECKY LOADER DISCORD OR GITHUB WILL BE IGNORED.**
