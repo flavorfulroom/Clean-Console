@@ -1,0 +1,58 @@
+:root {
+    --mr-dc-standard-padding: 40px;
+
+    /* Game Title */
+    --mr-dc-game-title-height: 40px;
+    --mr-dc-game-title-initial-position: calc(calc(var(--mr-dc-st-all-capsule-height) / 2) + calc(var(--mr-dc-game-title-height)) / 2);
+    --mr-dc-game-title-final-position: calc(var(--mr-dc-game-title-initial-position) + calc(2px * var(--mr-dc-ruler)) + 5px);
+    --mr-dc-game-title-neutral-position: calc(var(--mr-dc-game-title-initial-position) + 5px);
+}
+
+/* Current/Recent Game Text */
+._35iRep_MLGWeAmkLbeny7R {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    padding: calc(2 * var(--mr-dc-standard-padding));
+    padding-left: var(--mr-dc-standard-padding);
+    padding-right: var(--mr-dc-standard-padding);
+}
+
+/* Game Title */
+
+/* Outer Container */
+._1HIFNGSxh4-jOhPiDynR4C {
+    height: var(--mr-dc-st-all-capsule-height) !important;
+}
+
+/* Game Title Container */
+.ZkD6We6MqGbOsa9K3yiY3 {
+    position: absolute;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding-top: 4px;
+    align-content: center;
+    flex-wrap: wrap;
+    transform: none;
+}
+
+/* Game Title - Text */
+.ZkD6We6MqGbOsa9K3yiY3 ._3CKjiR7-fuBPyKZKpPI6UZ {
+    margin-left: 0px;
+    overflow: visible;
+}
+
+/* Carousel Container */
+._282X0J4BtrSF1IXctmOe-X ._3MdH5Czolhh5rC_nofUlcQ {
+    position: absolute !important;
+    left: 0px;
+    height: var(--mr-dc-st-all-capsule-height) !important;
+    margin-top: 0px;
+    padding: var(--mr-dc-standard-padding);
+    padding-top: calc(var(--mr-dc-game-title-height) + var(--mr-dc-standard-padding));
+    padding-bottom: calc(var(--mr-dc-game-title-height) + var(--mr-dc-standard-padding));
+    scroll-padding: var(--mr-dc-standard-padding);
+    box-sizing: unset !important;
+}

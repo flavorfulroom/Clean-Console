@@ -1,0 +1,39 @@
+/* Carousel Fix - Number of capsules */
+
+:root:has([role="listitem"][aria-setsize="21"]) { --mr-dc-game-list-size: 20; }
+:root:has([role="listitem"][aria-setsize="20"]) { --mr-dc-game-list-size: 19; }
+:root:has([role="listitem"][aria-setsize="19"]) { --mr-dc-game-list-size: 18; }
+:root:has([role="listitem"][aria-setsize="18"]) { --mr-dc-game-list-size: 17; }
+:root:has([role="listitem"][aria-setsize="17"]) { --mr-dc-game-list-size: 16; }
+:root:has([role="listitem"][aria-setsize="16"]) { --mr-dc-game-list-size: 15; }
+:root:has([role="listitem"][aria-setsize="15"]) { --mr-dc-game-list-size: 14; }
+:root:has([role="listitem"][aria-setsize="14"]) { --mr-dc-game-list-size: 13; }
+:root:has([role="listitem"][aria-setsize="13"]) { --mr-dc-game-list-size: 12; }
+:root:has([role="listitem"][aria-setsize="12"]) { --mr-dc-game-list-size: 11; }
+:root:has([role="listitem"][aria-setsize="11"]) { --mr-dc-game-list-size: 10; }
+:root:has([role="listitem"][aria-setsize="10"]) { --mr-dc-game-list-size: 9; }
+:root:has([role="listitem"][aria-setsize="9"])  { --mr-dc-game-list-size: 8; }
+:root:has([role="listitem"][aria-setsize="8"])  { --mr-dc-game-list-size: 7; }
+:root:has([role="listitem"][aria-setsize="7"])  { --mr-dc-game-list-size: 6; }
+:root:has([role="listitem"][aria-setsize="6"])  { --mr-dc-game-list-size: 5; }
+:root:has([role="listitem"][aria-setsize="5"])  { --mr-dc-game-list-size: 4; }
+:root:has([role="listitem"][aria-setsize="4"])  { --mr-dc-game-list-size: 3; }
+:root:has([role="listitem"][aria-setsize="3"])  { --mr-dc-game-list-size: 2; }
+:root:has([role="listitem"][aria-setsize="2"])  { --mr-dc-game-list-size: 1; }
+:root:has([role="listitem"][aria-setsize="1"])  { --mr-dc-game-list-size: 0; }
+
+:root {
+    --mr-dc-carousel-container-width: calc(var(--mr-dc-st-first-capsule-container-width) + calc(var(--mr-dc-st-other-capsule-container-width) * var(--mr-dc-game-list-size)) - var(--mr-dc-st-capsule-container-default-right-padding));
+}
+
+/* Capsule Sizing */
+
+._3MdH5Czolhh5rC_nofUlcQ .ReactVirtualized__Grid__innerScrollContainer {
+    width: var(--mr-dc-carousel-container-width) !important;
+    height: var(--mr-dc-st-all-capsule-height) !important;
+}
+
+[data-id*="GoToLibrary"] {
+    width: var(--mr-dc-st-other-capsule-width) !important;
+    height: var(--mr-dc-st-all-capsule-height) !important;
+}

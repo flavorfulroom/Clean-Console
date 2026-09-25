@@ -1,0 +1,6 @@
+:root {
+    --mr-dc-focus-transform-strength-lower: 0.8;
+    --mr-dc-transform-origin-direction-lower: center;
+    --mr-dc-focus-transform-strength: var(--mr-dc-focus-transform-strength-lower);
+    --mr-dc-transform-origin-direction: var(--mr-dc-transform-origin-direction-lower);
+}

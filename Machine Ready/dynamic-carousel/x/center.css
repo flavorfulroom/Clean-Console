@@ -1,0 +1,6 @@
+:root {
+    --mr-dc-carousel-offset-width-center: calc(100% / var(--mr-dc-carousel-scaling) - var(--mr-dc-carousel-offset-padding-center));
+    --mr-dc-carousel-offset-padding-center: 69.5px;
+    --mr-dc-carousel-offset-width: var(--mr-dc-carousel-offset-width-center);
+    --mr-dc-carousel-offset-padding: var(--mr-dc-carousel-offset-padding-center);
+}

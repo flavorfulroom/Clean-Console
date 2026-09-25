@@ -1,0 +1,92 @@
+:root {
+    --mr-dc-st-capsule-container-default-bottom-padding: 52px;
+    --mr-dc-st-capsule-container-default-right-padding: 12px;
+    --mr-dc-st-all-capsule-height: calc(var(--mr-dc-st-all-capsule-container-height) - var(--mr-dc-st-capsule-container-default-bottom-padding));
+    --mr-dc-st-first-capsule-width: calc(var(--mr-dc-st-first-capsule-container-width) - var(--mr-dc-st-capsule-container-default-right-padding));
+    --mr-dc-st-other-capsule-width: calc(var(--mr-dc-st-other-capsule-container-width) - var(--mr-dc-st-capsule-container-default-right-padding));
+    --mr-dc-st-type-size-1: 0;
+    --mr-dc-st-type-size-2: 0;
+    --mr-dc-st-type-size-3: 0;
+
+}
+
+/* Size 1 */
+
+:root:has([role="listitem"][aria-posinset="1"][style*="height: 217px"]) {
+    --mr-dc-st-all-capsule-container-height: 217px;
+    --mr-dc-st-type-size-1: 1;
+}
+
+:root:has([role="listitem"][aria-posinset="1"][style*="width: 365.023px"]) {
+    --mr-dc-st-first-capsule-container-width: 365.023px;
+}
+
+:root:has([role="listitem"][aria-posinset="1"][style*="width: 122px"]) {
+    --mr-dc-st-first-capsule-container-width: 122px;
+}
+
+:root:has([role="listitem"][aria-posinset="1"][style*="width: 177px"]) {
+    --mr-dc-st-first-capsule-container-width: 177px;
+}
+
+:root:has([role="listitem"][aria-posinset="2"][style*="width: 122px"]) {
+    --mr-dc-st-other-capsule-container-width: 122px;
+}
+
+:root:has([role="listitem"][aria-posinset="2"][style*="width: 177px"]) {
+    --mr-dc-st-other-capsule-container-width: 177px;
+}
+
+/* Size 2 */
+
+:root:has([role="listitem"][aria-posinset="1"][style*="height: 253px"]) {
+    --mr-dc-st-all-capsule-container-height: 253px;
+    --mr-dc-st-type-size-2: 1;
+}
+
+:root:has([role="listitem"][aria-posinset="1"][style*="width: 442.047px"]) {
+    --mr-dc-st-first-capsule-container-width: 442.047px;
+}
+
+:root:has([role="listitem"][aria-posinset="1"][style*="width: 146px"]) {
+    --mr-dc-st-first-capsule-container-width: 146px;
+}
+
+:root:has([role="listitem"][aria-posinset="1"][style*="width: 213px"]) {
+    --mr-dc-st-first-capsule-container-width: 213px;
+}
+
+:root:has([role="listitem"][aria-posinset="2"][style*="width: 146px"]) {
+    --mr-dc-st-other-capsule-container-width: 146px;
+}
+
+:root:has([role="listitem"][aria-posinset="2"][style*="width: 213px"]) {
+    --mr-dc-st-other-capsule-container-width: 213px;
+}
+
+/* Size 3 */
+
+:root:has([role="listitem"][aria-posinset="1"][style*="height: 310px"]) {
+    --mr-dc-st-all-capsule-container-height: 310px;
+    --mr-dc-st-type-size-3: 1;
+}
+
+:root:has([role="listitem"][aria-posinset="1"][style*="width: 564px"]) {
+    --mr-dc-st-first-capsule-container-width: 564px;
+}
+
+:root:has([role="listitem"][aria-posinset="1"][style*="width: 184px"]) {
+    --mr-dc-st-first-capsule-container-width: 184px;
+}
+
+:root:has([role="listitem"][aria-posinset="1"][style*="width: 270px"]) {
+    --mr-dc-st-first-capsule-container-width: 270px;
+}
+
+:root:has([role="listitem"][aria-posinset="2"][style*="width: 184px"]) {
+    --mr-dc-st-other-capsule-container-width: 184px;
+}
+
+:root:has([role="listitem"][aria-posinset="2"][style*="width: 270px"]) {
+    --mr-dc-st-other-capsule-container-width: 270px;
+}

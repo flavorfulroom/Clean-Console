@@ -1,0 +1,31 @@
+:root {
+    --mr-hero-fullscreen: 0px;
+}
+
+/* Full Screen Home */
+._39tNvaLedsTrVh0fFsP4Jm {
+    height: 100vh !important;
+}
+
+._282X0J4BtrSF1IXctmOe-X {
+    height: 100vh !important;
+}
+
+._2_cRkGdbegoIbiRsy_-I7 {
+    width: 100vw !important;
+    height: 100vh !important;
+    padding: 0;
+}
+
+.cE1SaW6jrVUDxcqRtyMo1 {
+    margin-top: 0px;
+}
+
+/* Hero Alignment */
+.QNkOtW3xS-yj6LviWHvnd, ._30D-80Lg-Luy-KxOumBlaY, ._30D-80Lg-Luy-KxOumBlaY img {
+    width: 100vw !important;
+    height: calc(100vh - calc(var(--mr-hero-fullscreen) * 2)) !important;
+    object-position: var(--mr-hero-alignment);
+    object-fit: var(--mr-hero-style);
+    padding-top: var(--mr-hero-fullscreen);
+}

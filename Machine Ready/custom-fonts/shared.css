@@ -1,0 +1,34 @@
+@font-face {
+    font-family: "Inter";
+    src: url("/themes_custom/Machine Ready/custom-fonts/fonts/Inter.ttf");
+}
+
+@font-face {
+    font-family: "NintendoSwitchUI";
+    src: url("/themes_custom/Machine Ready/custom-fonts/fonts/NintendoSwitchUI.ttf");
+    size-adjust: 85%;
+}
+
+@font-face {
+    font-family: "Quicksand";
+    src: url("/themes_custom/Machine Ready/custom-fonts/fonts/Quicksand.ttf");
+}
+
+@font-face {
+    font-family: "SourGummy";
+    src: url("/themes_custom/Machine Ready/custom-fonts/fonts/SourGummy.ttf");
+}
+
+@font-face {
+    font-family: "UnicaOne";
+    src: url("/themes_custom/Machine Ready/custom-fonts/fonts/UnicaOne.ttf");
+}
+
+* {
+    font-family: var(--mr-cf-font-name) !important;
+}
+
+/* CSS Loader Title Fix */
+._34nl5vUoFCDYYnmHNL7axB > div {
+    font-size: 0.95em;
+}

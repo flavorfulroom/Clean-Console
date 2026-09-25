@@ -1,0 +1,208 @@
+{
+    "name": "Machine Ready",
+    "author": "Leozito",
+    "version": "v2.3",
+    "description": "Clean consolifyed home screen.",
+    "target": "Home",
+    "manifest_version": 9,
+    "tabs": { "default": [ "bigpicture" ] },
+    "inject": {
+        "shared.css": [],
+        "dynamic-carousel/shared.css": [],
+        "dynamic-carousel/dynamic-x.css": [],
+        "dynamic-carousel/dynamic-y.css": [],
+        "dynamic-carousel/dynamic-z.css": [],
+        "dynamic-carousel/size-tracker.css": []
+    },
+    "patches": {
+        "Hero Style": {
+            "type": "Dropdown",
+            "default": "Cover",
+            "values": {
+                "Cover": {
+                    "--mr-hero-style": [ "cover" ],
+                    "--mr-hero-alignment": [ "var(--mr-hero-ruler) 50%"]
+                },
+                "Contain": {
+                    "--mr-hero-style": [ "contain" ],
+                    "--mr-hero-alignment": [ "50% var(--mr-hero-ruler)" ],
+                    "tweaks/linear-gradient.css": []
+                },
+                "Stretch": {
+                    "--mr-hero-style": [ "stretch" ]
+                }
+            }
+        },
+        "Hero Position": {
+            "type": "slider",
+            "default": "3",
+            "values": {
+                "1": {
+                    "--mr-hero-ruler": [ "0%" ],
+                    "--mr-hero-contain-gradient-top-image-tv": [ "0%" ],
+                    "--mr-hero-contain-gradient-bot-image-tv": [ "55%" ],
+                    "--mr-hero-contain-gradient-top-image-sd": [ "0%" ],
+                    "--mr-hero-contain-gradient-bot-image-sd": [ "49%" ]
+                },
+                "2": {
+                    "--mr-hero-ruler": [ "25%" ],
+                    "--mr-hero-contain-gradient-top-image-tv": [ "13%" ],
+                    "--mr-hero-contain-gradient-bot-image-tv": [ "65.5%" ],
+                    "--mr-hero-contain-gradient-top-image-sd": [ "14.5%" ],
+                    "--mr-hero-contain-gradient-bot-image-sd": [ "61.5%" ]
+                },
+                "3": {
+                    "--mr-hero-ruler": [ "50%" ],
+                    "--mr-hero-contain-gradient-top-image-tv": [ "23.5%" ],
+                    "--mr-hero-contain-gradient-bot-image-tv": [ "76.5%" ],
+                    "--mr-hero-contain-gradient-top-image-sd": [ "26.5%" ],
+                    "--mr-hero-contain-gradient-bot-image-sd": [ "73.5%" ]
+                },
+                "4": {
+                    "--mr-hero-ruler": [ "75%" ],
+                    "--mr-hero-contain-gradient-top-image-tv": [ "34.5%" ],
+                    "--mr-hero-contain-gradient-bot-image-tv": [ "87%" ],
+                    "--mr-hero-contain-gradient-top-image-sd": [ "38.5%" ],
+                    "--mr-hero-contain-gradient-bot-image-sd": [ "85.5%" ]
+                },
+                "5": {
+                    "--mr-hero-ruler": [ "100%" ],
+                    "--mr-hero-contain-gradient-top-image-tv": [ "45%" ],
+                    "--mr-hero-contain-gradient-bot-image-tv": [ "100%" ],
+                    "--mr-hero-contain-gradient-top-image-sd": [ "51%" ],
+                    "--mr-hero-contain-gradient-bot-image-sd": [ "100%" ]
+                }
+            }
+        },
+        "Header & Footer Padding": {
+            "type": "checkbox",
+            "default": "Yes",
+            "values": {
+                "No": {
+                    "--mr-hero-fullscreen": [ "40px" ]
+                },
+                "Yes": {}
+            }
+        },
+        "Remove Hero Zoom Animation": {
+            "type": "checkbox",
+            "default": "Yes",
+            "values": {
+                "No": {},
+                "Yes": { "tweaks/remove-zoom-animation.css":[] }
+            }
+        },
+        "Remove Hero Gradient": {
+            "type": "checkbox",
+            "default": "Yes",
+            "values": {
+                "No": {},
+                "Yes": { "tweaks/remove-gradient.css": [] }
+            }
+        },
+        "Remove Carousel Glow": {
+            "type": "checkbox",
+            "default": "Yes",
+            "values": {
+                "No": {},
+                "Yes": { "tweaks/remove-glow.css":[] }
+            }
+        },
+        "Remove Brightness Filter": {
+            "type": "checkbox",
+            "default": "Yes",
+            "values": {
+                "No": {},
+                "Yes": { "tweaks/remove-filters.css":[] }
+            }
+        },
+        "Dynamic-X Left": {
+            "type": "checkbox",
+            "default": "No",
+            "values": {
+                "No": { "dynamic-carousel/x/center.css": [] },
+                "Yes": { "dynamic-carousel/x/left.css": [] }
+            }
+        },
+        "Dynamic-X Scaling": {
+            "type": "slider",
+            "default": "0",
+            "values": {
+                "-5": { "--mr-dc-carousel-scaling": [ "0.75" ] },
+                "-4": { "--mr-dc-carousel-scaling": [ "0.80" ] },
+                "-3": { "--mr-dc-carousel-scaling": [ "0.85" ] },
+                "-2": { "--mr-dc-carousel-scaling": [ "0.90" ] },
+                "-1": { "--mr-dc-carousel-scaling": [ "0.95" ] },
+                "0":  { "--mr-dc-carousel-scaling": [ "1.00" ] },
+                "+1": { "--mr-dc-carousel-scaling": [ "1.05" ] },
+                "+2": { "--mr-dc-carousel-scaling": [ "1.10" ] },
+                "+3": { "--mr-dc-carousel-scaling": [ "1.15" ] },
+                "+4": { "--mr-dc-carousel-scaling": [ "1.20" ] },
+                "+5": { "--mr-dc-carousel-scaling": [ "1.25" ] }
+            }
+        },
+        "Dynamic-Y Position": {
+            "type": "slider",
+            "default": "Center",
+            "values": {
+                "Top": { "dynamic-carousel/y/top.css": [] },
+                "Center": { "dynamic-carousel/y/center.css": [] },
+                "Bottom": { "dynamic-carousel/y/bottom.css": [] }
+            }
+        },
+        "Dynamic-Z Style": {
+            "type": "slider",
+            "default": "Magnify",
+            "values": {
+                "Raise": { "dynamic-carousel/z/raise.css": [] },
+                "Magnify": { "dynamic-carousel/z/magnify.css": [] },
+                "Lower": { "dynamic-carousel/z/lower.css": [] }
+            }
+        },
+        "Dynamic-Z Strength": {
+            "type": "slider",
+            "default": "5",
+            "values": {
+                "Off": { "--mr-dc-ruler": [ "0" ] },
+                "1": { "--mr-dc-ruler": [ "1" ] },
+                "2": { "--mr-dc-ruler": [ "2" ] },
+                "3": { "--mr-dc-ruler": [ "3" ] },
+                "4": { "--mr-dc-ruler": [ "4" ] },
+                "5": { "--mr-dc-ruler": [ "5" ] },
+                "6": { "--mr-dc-ruler": [ "6" ] },
+                "7": { "--mr-dc-ruler": [ "7" ] },
+                "8": { "--mr-dc-ruler": [ "8" ] },
+                "9": { "--mr-dc-ruler": [ "9" ] },
+                "Max": { "--mr-dc-ruler": [ "10" ] }
+            }
+        },
+        "Custom Font": {
+            "type": "dropdown",
+            "default": "Quicksand",
+            "values": {
+                "Default": {},
+                "Inter": {
+                    "custom-fonts/shared.css": [ "bigpicture", "QuickAccess", "MainMenu", "notificationtoasts.*" ],
+                    "--mr-cf-font-name": [ "Inter", "bigpicture", "QuickAccess", "MainMenu", "notificationtoasts.*" ]
+                },
+                "NintendoSwitchUI": {
+                    "custom-fonts/shared.css": [ "bigpicture", "QuickAccess", "MainMenu", "notificationtoasts.*" ],
+                    "--mr-cf-font-name": [ "NintendoSwitchUI", "bigpicture", "QuickAccess", "MainMenu", "notificationtoasts.*" ]
+                },
+                "Quicksand": {
+                    "custom-fonts/shared.css": [ "bigpicture", "QuickAccess", "MainMenu", "notificationtoasts.*" ],
+                    "--mr-cf-font-name": [ "Quicksand", "bigpicture", "QuickAccess", "MainMenu", "notificationtoasts.*" ]
+                },
+                "SourGummy": {
+                    "custom-fonts/shared.css": [ "bigpicture", "QuickAccess", "MainMenu", "notificationtoasts.*" ],
+                    "--mr-cf-font-name": [ "SourGummy", "bigpicture", "QuickAccess", "MainMenu", "notificationtoasts.*" ]
+                },
+                "UnicaOne": {
+                    "custom-fonts/shared.css": [ "bigpicture", "QuickAccess", "MainMenu", "notificationtoasts.*" ],
+                    "--mr-cf-font-name": [ "UnicaOne", "bigpicture", "QuickAccess", "MainMenu", "notificationtoasts.*" ]
+                }
+            }
+        }
+    },
+    "id": "d575cec7-eeb4-4c9c-b5ba-48679467111b"
+}

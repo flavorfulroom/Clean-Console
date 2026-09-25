@@ -1,0 +1,14 @@
+{
+  "name": "Hide Menu Button",
+  "author": "Leozito",
+  "version": "v1.0",
+  "manifest_version": 9,
+  "inject": {
+    "shared.css": [
+      "bigpicture",
+      "QuickAccess",
+      "MainMenu"
+    ]
+  },
+  "id": "357d44d1-3ac4-445f-9d09-ec1ff7f306ef"
+}

@@ -1,0 +1,14 @@
+:root {
+    --mr-dc-carousel-scaling-ruler: calc(2 - var(--mr-dc-carousel-scaling));
+}
+
+/* Carousel Container - Highlight Position*/
+._282X0J4BtrSF1IXctmOe-X {
+    width: var(--mr-dc-carousel-offset-width);
+    padding-right: var(--mr-dc-carousel-offset-padding);
+}
+
+/* Full width Carousel */
+._282X0J4BtrSF1IXctmOe-X ._3MdH5Czolhh5rC_nofUlcQ {
+    width: calc(100vw / var(--mr-dc-carousel-scaling) - calc(var(--mr-dc-standard-padding) * 2)) !important;
+}
