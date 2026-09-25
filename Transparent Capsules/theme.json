@@ -1,0 +1,41 @@
+{
+    "name": "Transparent Capsules",
+    "author": "Leozito",
+    "version": "v1.0",
+    "manifest_version": 9,
+    "tabs": {
+        "default": [ "bigpicture" ]
+    },
+    "inject": {
+        "shared.css": []
+    },
+    "patches": {
+        "Opacity": {
+            "type": "slider",
+            "default": "0.3",
+            "values": {
+                "0.1": { "--tc-capsules-opacity": [ "0.1" ] },
+                "0.2": { "--tc-capsules-opacity": [ "0.2" ] },
+                "0.3": { "--tc-capsules-opacity": [ "0.3" ] },
+                "0.4": { "--tc-capsules-opacity": [ "0.4" ] },
+                "0.5": { "--tc-capsules-opacity": [ "0.5" ] },
+                "0.6": { "--tc-capsules-opacity": [ "0.6" ] },
+                "0.7": { "--tc-capsules-opacity": [ "0.7" ] },
+                "0.8": { "--tc-capsules-opacity": [ "0.8" ] },
+                "0.9": { "--tc-capsules-opacity": [ "0.9" ] },
+                "1.0": { "--tc-capsules-opacity": [ "0.9" ] }
+            }
+        },
+        "Apply to Library": {
+            "type": "checkbox",
+            "default": "No",
+            "values": {
+                "No": {},
+                "Yes": {
+                    "library.css": []
+                }
+            }
+        }
+    },
+    "id": "64dcc0f6-2717-4172-9d42-c91d5bb94110"
+}
