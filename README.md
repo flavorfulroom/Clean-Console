@@ -27,7 +27,7 @@
 > **Decky Loader** and the **CSS Loader** plugin are **required** to use these themes and profiles.  
 > If you don't have them installed yet, please set up [Decky Loader](https://decky.xyz/) and install **CSS Loader** via the Decky Store in Gaming Mode before proceeding.
 
-### 📦 Option 1: Manual Installation
+### 📦 Installation
  follow these steps:
 
 #### 1. Core Themes
