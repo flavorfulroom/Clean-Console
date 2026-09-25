@@ -1,0 +1,74 @@
+.gamepadhomerecentgames_RecentGamesBackgroundContainer_QNkOt {
+	position: absolute;
+    top: 0;
+    background: #000 url("/themes_custom/Animated CSS Space Background/stars.png") repeat;
+	background-size: 150%;
+    z-index: 0;
+}
+
+.gamepadhomerecentgames_RecentGamesBackgroundContainer_QNkOt > * {
+	display: none;
+}
+
+.gamepadhomerecentgames_RecentGamesBackgroundContainer_QNkOt::before,
+.gamepadhomerecentgames_RecentGamesBackgroundContainer_QNkOt::after {
+    content: "";
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    width: 100%; height: 100%;
+    display: block;
+}
+
+.gamepadhomerecentgames_RecentGamesBackgroundContainer_QNkOt::before {
+    background: transparent url("/themes_custom/Animated CSS Space Background/twinkle.png") repeat;
+    z-index: 1;
+}
+
+.gamepadhomerecentgames_RecentGamesBackgroundContainer_QNkOt::after {
+    background: transparent url("/themes_custom/Animated CSS Space Background/clouds.png") repeat;
+	background-size: 300% 150%;
+    z-index: 2;
+}
+
+@keyframes move-stars {
+  0%  { background-position: calc(50% + 1500px) calc(50% + 0px); }
+  5%  { background-position: calc(50% + 1427px) calc(50% + 464px); }
+  10%  { background-position: calc(50% + 1214px) calc(50% + 882px); }
+  15%  { background-position: calc(50% + 882px) calc(50% + 1214px); }
+  20%  { background-position: calc(50% + 464px) calc(50% + 1427px); }
+  25%  { background-position: calc(50% + 0px) calc(50% + 1500px); }
+  30%  { background-position: calc(50% + -464px) calc(50% + 1427px); }
+  35%  { background-position: calc(50% + -882px) calc(50% + 1214px); }
+  40%  { background-position: calc(50% + -1214px) calc(50% + 882px); }
+  45%  { background-position: calc(50% + -1427px) calc(50% + 464px); }
+  50%  { background-position: calc(50% + -1500px) calc(50% + 0px); }
+  55%  { background-position: calc(50% + -1427px) calc(50% + -464px); }
+  60%  { background-position: calc(50% + -1214px) calc(50% + -882px); }
+  65%  { background-position: calc(50% + -882px) calc(50% + -1214px); }
+  70%  { background-position: calc(50% + -464px) calc(50% + -1427px); }
+  75%  { background-position: calc(50% + 0px) calc(50% + -1500px); }
+  80%  { background-position: calc(50% + 464px) calc(50% + -1427px); }
+  85%  { background-position: calc(50% + 882px) calc(50% + -1214px); }
+  90%  { background-position: calc(50% + 1214px) calc(50% + -882px); }
+  95%  { background-position: calc(50% + 1427px) calc(50% + -464px); }
+  100%  { background-position: calc(50% + 1500px) calc(50% + 0px); }
+}
+
+@keyframes move-twink-back {
+    from { background-position: 0 0; }
+    to { background-position: -10000px 5000px; }
+}
+
+@keyframes move-clouds-back {
+    from { background-position: 500% -140px; }
+    to { background-position: 200% -140px; }
+}
+
+/* Un-hide the hero art so it displays over the twinkle background */
+.gamepadhomerecentgames_RecentGamesBackgroundContainer_QNkOt > .QNkOtW3xS-yj6LviWHvnd,
+.gamepadhomerecentgames_RecentGamesBackgroundContainer_QNkOt > ._30D-80Lg-Luy-KxOumBlaY {
+    display: block;
+    position: relative;
+    z-index: 3; /* above twinkle (z-index: 1), below clouds (z-index: 2) */
+}

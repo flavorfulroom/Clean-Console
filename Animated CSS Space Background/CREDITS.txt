@@ -1,0 +1,2 @@
+Nazar The Vis Azhar: for the original CSS background concept, taken from https://codepen.io/NazarAzhar/pen/zqXMqP
+SuchMeme: creator of the Static Background theme, which served as a base for this one

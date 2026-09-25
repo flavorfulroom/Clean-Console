@@ -1,0 +1,116 @@
+{
+  "name": "Animated CSS Space Background",
+  "version": "v1.0",
+  "author": "plrusek",
+  "manifest_version": 9,
+  "tabs": {
+    "default": [
+      "bigpicture"
+    ]
+  },
+  "inject": {
+    "home.css": []
+  },
+  "patches": {
+    "Stars Speed": {
+      "type": "slider",
+      "default": "2",
+      "values": {
+        "0": {
+          "starsspeed/noanim.css": []
+        },
+        "1": {
+          "starsspeed/1000.css": []
+        },
+        "2": {
+          "starsspeed/500.css": []
+        },
+        "3": {
+          "starsspeed/250.css": []
+        },
+        "4": {
+          "starsspeed/100.css": []
+        }
+      }
+    },
+    "Twinkle Speed": {
+      "type": "slider",
+      "default": "2",
+      "values": {
+        "0": {
+          "twinklespeed/noanim.css": []
+        },
+        "1": {
+          "twinklespeed/240.css": []
+        },
+        "2": {
+          "twinklespeed/120.css": []
+        },
+        "3": {
+          "twinklespeed/60.css": []
+        },
+        "4": {
+          "twinklespeed/30.css": []
+        }
+      }
+    },
+    "Clouds Speed": {
+      "type": "slider",
+      "default": "2",
+      "values": {
+        "0": {
+          "cloudsspeed/noanim.css": []
+        },
+        "1": {
+          "cloudsspeed/240.css": []
+        },
+        "2": {
+          "cloudsspeed/120.css": []
+        },
+        "3": {
+          "cloudsspeed/60.css": []
+        },
+        "4": {
+          "cloudsspeed/30.css": []
+        }
+      }
+    },
+    "Global Brightness": {
+      "type": "slider",
+      "default": "1",
+      "values": {
+        ".1": {
+          "brightness/10.css": []
+        },
+        ".2": {
+          "brightness/20.css": []
+        },
+        ".3": {
+          "brightness/30.css": []
+        },
+        ".4": {
+          "brightness/40.css": []
+        },
+        ".5": {
+          "brightness/50.css": []
+        },
+        ".6": {
+          "brightness/60.css": []
+        },
+        ".7": {
+          "brightness/70.css": []
+        },
+        ".8": {
+          "brightness/80.css": []
+        },
+        ".9": {
+          "brightness/90.css": []
+        },
+        "1": {
+          "brightness/100.css": []
+        }
+      }
+    }
+  },
+  "id": "bb24367e-5f1a-43ff-87f2-77cd723e1b2a"
+}
